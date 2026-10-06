@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<!--seo-->
+<link rel="icon" href="./assets/logo-mark.png" type="image/png">
+<link rel="apple-touch-icon" href="./assets/logo-mark.png">
+<title>ALGORICK – Algo Trading Platform for NSE &amp; BSE India</title>
+<meta name="description" content="Automate trades on NSE and BSE with backtested algo strategies, built-in risk controls and one-click connect to Zerodha, Upstox, Angel One, Dhan and more.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://algorick.com/">
+<link rel="alternate" hreflang="en-IN" href="https://algorick.com/">
+<link rel="alternate" hreflang="x-default" href="https://algorick.com/">
+<meta name="author" content="ALGORICK">
+<meta name="geo.region" content="IN-OR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ALGORICK">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="ALGORICK – Algo Trading Platform for NSE &amp; BSE India">
+<meta property="og:description" content="Automate trades on NSE and BSE with backtested algo strategies, built-in risk controls and one-click connect to Zerodha, Upstox, Angel One, Dhan and more.">
+<meta property="og:url" content="https://algorick.com/">
+<meta property="og:image" content="https://algorick.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ALGORICK – Algo trading platform for Indian markets">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ALGORICK – Algo Trading Platform for NSE &amp; BSE India">
+<meta name="twitter:description" content="Automate trades on NSE and BSE with backtested algo strategies, built-in risk controls and one-click connect to Zerodha, Upstox, Angel One, Dhan and more.">
+<meta name="twitter:image" content="https://algorick.com/og-image.png">
+<meta name="theme-color" content="#FF5533">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://algorick.com/#webpage","url":"https://algorick.com/","name":"ALGORICK – Algo Trading Platform for NSE & BSE India","description":"Automate trades on NSE and BSE with backtested algo strategies, built-in risk controls and one-click connect to Zerodha, Upstox, Angel One, Dhan and more.","inLanguage":"en-IN","isPartOf":{"@id":"https://algorick.com/#website"},"publisher":{"@id":"https://algorick.com/#organization"}},{"@type":"WebSite","@id":"https://algorick.com/#website","url":"https://algorick.com/","name":"ALGORICK","inLanguage":"en-IN","publisher":{"@id":"https://algorick.com/#organization"}},{"@type":"Organization","@id":"https://algorick.com/#organization","name":"ALGORICK","url":"https://algorick.com/","logo":"https://algorick.com/assets/logo-mark.png","email":"info@algorick.com","telephone":"+91-90406-67427","address":{"@type":"PostalAddress","addressLocality":"Paralakhemundi","addressRegion":"Odisha","postalCode":"761200","addressCountry":"IN"}},{"@type":"SoftwareApplication","name":"ALGORICK","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://algorick.com/","publisher":{"@id":"https://algorick.com/#organization"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FinancialService","name":"ALGORICK","url":"https://algorick.com","email":"info@algorick.com","telephone":"+91-90406-67427","address":{"@type":"PostalAddress","addressLocality":"Paralakhemundi","addressRegion":"Odisha","postalCode":"761200","addressCountry":"IN"},"areaServed":"IN","description":"Automate your trades with backtested algos on NSE & BSE. Connect Zerodha, Upstox, Angel One and more. Built-in risk controls, live P&L and TradingView signals."}</script>
+<script src="./analytics.js"></script>
+<!--/seo-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&display=block" rel="stylesheet">
+<style>
+html,body{margin:0;background:#fff;color:#0a0a0a;font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0a0a0a;text-decoration:none}
+a:hover{color:#FF5533}
+@keyframes circ{from{stroke-dashoffset:0}to{stroke-dashoffset:-1000}}
+@keyframes chipGlow{0%,100%{opacity:.35;transform:translate(-50%,-50%) scale(1)}50%{opacity:.7;transform:translate(-50%,-50%) scale(1.15)}}
+@keyframes mqL{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes mqR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes f3pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3);opacity:0}}
+@keyframes f3blink{0%{opacity:1}50%{opacity:0}}
+@keyframes mqU{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+@keyframes mqD{from{transform:translateY(-50%)}to{transform:translateY(0)}}
+</style>
+<script src="./menu.js"></script>
+<style>[style*="scrollbar-width: none"]::-webkit-scrollbar,[style*="scrollbar-width:none"]::-webkit-scrollbar{display:none}</style>
+</helmet>
+<div style="min-height:100vh;background:#fff;overflow-x:clip;position:relative">
+
+  <div style="position:absolute;top:0;left:0;right:0;height:max(720px,100vh);overflow:hidden;z-index:0;-webkit-mask-image:linear-gradient(180deg,#000 45%,transparent 56%);mask-image:linear-gradient(180deg,#000 45%,transparent 56%)">
+    <video ref="{{ videoRef }}" src="uploads/FF5533_recolored.mp4" style="width:100%;height:100%;object-fit:cover;display:block"></video>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 14%)"></div>
+  </div>
+
+  <div style="position:absolute;left:50%;top:calc(max(720px,100vh) * 0.3575 - 53px);transform:translateX(-50%);width:106px;height:106px;z-index:1">
+    <div style="position:absolute;left:50%;top:50%;width:190px;height:190px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,85,51,0.4),rgba(255,85,51,0));animation:chipGlow 3s ease-in-out infinite;pointer-events:none"></div>
+    <div style="position:absolute;inset:0;border-radius:28px;background:#141414;box-shadow:0 14px 30px -10px rgba(0,0,0,0.45)">
+      <div style="position:absolute;inset:6px;border-radius:23px;background:linear-gradient(180deg,#5a5a5a 0%,#2a2a2a 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.3),inset 0 -2px 4px rgba(0,0,0,0.4)">
+        <img src="./assets/logo-mark-white.png" alt="ALGORICK" style="position:absolute;inset:22%;width:56%;height:56%;object-fit:contain;filter:drop-shadow(0 1px 1px rgba(0,0,0,0.5));opacity:0.92;display:block">
+      </div>
+    </div>
+  </div>
+
+
+  <header style="position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <a href="#" style="display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;letter-spacing:-0.02em">
+      <img src="./assets/logo-mark.png" alt="" style="width:28px;height:28px;object-fit:contain;display:block;border-radius:7px"></img>
+      ALGORICK
+    </a>
+    <nav style="display:flex;gap:28px;font-size:14px;font-weight:500;flex-wrap:wrap">
+      <a href="Products.dc.html">Products</a>
+      <a href="FAQ.dc.html">FAQ</a>
+      <a href="Contact.dc.html">Contact</a>
+      <div data-menu="1" style="position:relative">
+        <button data-menu-toggle="1" style="display:flex;align-items:center;gap:4px;border:0;background:transparent;padding:0;font-family:inherit;font-size:14px;font-weight:500;color:#0a0a0a;cursor:pointer">Resources<span style="font-family:'Material Symbols Rounded';font-size:18px;line-height:1">expand_more</span></button>
+        <div data-menu-panel="1" style="position:absolute;top:100%;right:-12px;transform:translateY(6px);padding-top:14px;opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;z-index:60">
+          <div style="width:min(560px,calc(100vw - 32px));background:#fff;border:1px solid #e7e7e7;border-radius:16px;box-shadow:0 24px 50px -20px rgba(0,0,0,0.22);padding:8px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px">
+            <a href="Blog.dc.html" style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;color:#0a0a0a" style-hover="background:#f6f6f6;color:#0a0a0a">
+              <span style="width:36px;height:36px;flex-shrink:0;border-radius:9px;background:#fff1ec;display:grid;place-items:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">article</span></span>
+              <span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:14px;font-weight:600">Blog</span><span style="font-size:12px;color:#6b6b6b;font-weight:400">Guides and market insights</span></span>
+            </a>
+            <a href="Screener.dc.html" style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;color:#0a0a0a" style-hover="background:#f6f6f6;color:#0a0a0a">
+              <span style="width:36px;height:36px;flex-shrink:0;border-radius:9px;background:#fff1ec;display:grid;place-items:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">filter_alt</span></span>
+              <span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:14px;font-weight:600">Screener</span><span style="font-size:12px;color:#6b6b6b;font-weight:400">Filter Indian stocks by metrics</span></span>
+            </a>
+            <a href="Stock-Heatmap.dc.html" style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;color:#0a0a0a" style-hover="background:#f6f6f6;color:#0a0a0a">
+              <span style="width:36px;height:36px;flex-shrink:0;border-radius:9px;background:#fff1ec;display:grid;place-items:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">grid_view</span></span>
+              <span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:14px;font-weight:600">Stock Heatmap</span><span style="font-size:12px;color:#6b6b6b;font-weight:400">BSE SENSEX moves at a glance</span></span>
+            </a>
+            <a href="Technical-Analysis.dc.html" style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;color:#0a0a0a" style-hover="background:#f6f6f6;color:#0a0a0a">
+              <span style="width:36px;height:36px;flex-shrink:0;border-radius:9px;background:#fff1ec;display:grid;place-items:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">speed</span></span>
+              <span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:14px;font-weight:600">Technical Analysis</span><span style="font-size:12px;color:#6b6b6b;font-weight:400">Buy and sell ratings by timeframe</span></span>
+            </a>
+            <a href="Fundamental-Data.dc.html" style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;color:#0a0a0a" style-hover="background:#f6f6f6;color:#0a0a0a">
+              <span style="width:36px;height:36px;flex-shrink:0;border-radius:9px;background:#fff1ec;display:grid;place-items:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">account_balance</span></span>
+              <span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:14px;font-weight:600">Fundamental Data</span><span style="font-size:12px;color:#6b6b6b;font-weight:400">Financials, ratios and earnings</span></span>
+            </a>
+            <a href="Company-Profile.dc.html" style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;color:#0a0a0a" style-hover="background:#f6f6f6;color:#0a0a0a">
+              <span style="width:36px;height:36px;flex-shrink:0;border-radius:9px;background:#fff1ec;display:grid;place-items:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">apartment</span></span>
+              <span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:14px;font-weight:600">Company Profile</span><span style="font-size:12px;color:#6b6b6b;font-weight:400">Business overview and key facts</span></span>
+            </a>
+            <a href="Holiday-Calendar.dc.html" style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;color:#0a0a0a" style-hover="background:#f6f6f6;color:#0a0a0a">
+              <span style="width:36px;height:36px;flex-shrink:0;border-radius:9px;background:#fff1ec;display:grid;place-items:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">event</span></span>
+              <span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:14px;font-weight:600">Holiday Calendar</span><span style="font-size:12px;color:#6b6b6b;font-weight:400">NSE and BSE trading holidays</span></span>
+            </a>
+            <a href="Flash.dc.html" style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;color:#0a0a0a" style-hover="background:#f6f6f6;color:#0a0a0a">
+              <span style="width:36px;height:36px;flex-shrink:0;border-radius:9px;background:#fff1ec;display:grid;place-items:center"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">bolt</span></span>
+              <span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:14px;font-weight:600">Flash</span><span style="font-size:12px;color:#6b6b6b;font-weight:400">Quick market updates</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div style="display:flex;align-items:center;gap:18px"><a href="#" style="font-size:14px;font-weight:500">Log in</a><a href="#" style="background:#0a0a0a;color:#fff;padding:11px 18px;border-radius:999px;font-size:14px;font-weight:500" style-hover="background:#FF5533;color:#fff">Get started</a></div>
+  </header>
+
+  <main style="position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:calc(max(720px,100vh) * 0.46 - 76px) 24px 120px;display:flex;flex-direction:column;align-items:center;text-align:center">
+    <div style="display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,0.85);border:1px solid #e7e7e7;font-size:13px;font-weight:500;backdrop-filter:blur(8px)">
+      <span style="width:7px;height:7px;border-radius:50%;background:#FF5533"></span>
+      Algo trading for Indian markets
+    </div>
+    <h1 style="margin:22px 0 0;font-size:clamp(40px,6.4vw,76px);line-height:1.02;letter-spacing:-0.045em;font-weight:600;max-width:820px;text-wrap:balance">Automate your trades with expert algos</h1>
+    <p style="margin:20px 0 0;font-size:clamp(16px,1.5vw,18px);line-height:1.55;color:#4a4a4a;max-width:600px;text-wrap:pretty">Deploy backtested strategies on your own broker account in minutes. ALGORICK places every trade with built-in risk controls, so you never have to watch the screen all day.</p>
+    <div style="display:flex;gap:10px;margin-top:32px;flex-wrap:wrap;justify-content:center">
+      <a href="#" style="display:flex;align-items:center;gap:12px;background:#0a0a0a;color:#fff;padding:6px 6px 6px 20px;border-radius:999px;font-size:15px;font-weight:500" style-hover="color:#fff;background:#222">
+        Start free trial
+        <span style="width:32px;height:32px;border-radius:50%;background:#FF5533;display:grid;place-items:center;font-size:16px;color:#fff">→</span>
+      </a>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;margin-top:44px">
+      <div style="display:flex">
+        <span style="width:32px;height:32px;border-radius:50%;border:2px solid #fff;background:#0a0a0a;color:#fff;font-size:11px;font-weight:600;display:grid;place-items:center">AK</span>
+        <span style="width:32px;height:32px;border-radius:50%;border:2px solid #fff;background:#FF5533;color:#fff;font-size:11px;font-weight:600;display:grid;place-items:center;margin-left:-9px">MR</span>
+        <span style="width:32px;height:32px;border-radius:50%;border:2px solid #fff;background:#d9d9d9;color:#0a0a0a;font-size:11px;font-weight:600;display:grid;place-items:center;margin-left:-9px">JL</span>
+        <span style="width:32px;height:32px;border-radius:50%;border:2px solid #fff;background:#3a3a3a;color:#fff;font-size:11px;font-weight:600;display:grid;place-items:center;margin-left:-9px">SN</span>
+        <span style="width:32px;height:32px;border-radius:50%;border:2px solid #fff;background:#ffd2c7;color:#0a0a0a;font-size:11px;font-weight:600;display:grid;place-items:center;margin-left:-9px">TV</span>
+      </div>
+      <span style="font-size:14px;color:#4a4a4a">Trusted by 1,200+ traders</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px 0;margin-top:40px;padding:18px 8px;border-radius:20px;background:rgba(255,255,255,0.85);border:1px solid #ececec;backdrop-filter:blur(8px)">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:2px;padding:0 clamp(12px,3vw,32px)"><span style="font-size:clamp(22px,2.6vw,30px);font-weight:600;letter-spacing:-0.03em">21+</span><span style="font-size:13px;color:#6b6b6b">Ready-made algos</span></div>
+      <span style="width:1px;background:#e7e7e7"></span>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:2px;padding:0 clamp(12px,3vw,32px)"><span style="font-size:clamp(22px,2.6vw,30px);font-weight:600;letter-spacing:-0.03em">12</span><span style="font-size:13px;color:#6b6b6b">Supported brokers</span></div>
+      <span style="width:1px;background:#e7e7e7"></span>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:2px;padding:0 clamp(12px,3vw,32px)"><span style="font-size:clamp(22px,2.6vw,30px);font-weight:600;letter-spacing:-0.03em">10 yrs</span><span style="font-size:13px;color:#6b6b6b">Backtest data</span></div>
+      <span style="width:1px;background:#e7e7e7"></span>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:2px;padding:0 clamp(12px,3vw,32px)"><span style="font-size:clamp(22px,2.6vw,30px);font-weight:600;letter-spacing:-0.03em">&lt;1 sec</span><span style="font-size:13px;color:#6b6b6b">Order execution</span></div>
+    </div>
+  </main>
+
+  <section style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 24px 120px">
+    <div ref="{{ tiltRef }}" style="transform-origin:50% 50%;transform:perspective(1200px) translateY(120px) scale(0.8) rotateX(60deg);will-change:transform;">
+      <div style="border-radius:14px;overflow:hidden;background:#0b0b0d;box-shadow:0 -1px 0 rgba(255,255,255,0.4),0 20px 60px rgba(0,0,0,0.3)">
+        <img src="uploads/Trades%20-%20Piip%20Algo.jpg" alt="Order book dashboard" style="display:block;width:100%;height:auto">
+      </div>
+    </div>
+  </section>
+
+  <section ref="{{ stackRef }}" style="position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 24px 120px;display:flex;flex-direction:column;gap:48px">
+   <div data-stack="0" style="position:sticky;top:80px">
+    <div ref="{{ viewsRef }}" style="opacity:{{ vOp }};transform:translateY({{ vY }}px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)">
+    <div data-card="1" style="transform-origin:50% 0%;will-change:transform;background:#fafafa;border:1px solid #e3e3e3;border-radius:18px;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px;align-items:center;box-shadow:0 -10px 30px -20px rgba(0,0,0,0.15)">
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:clamp(8px,3vw,28px)">
+        <div style="position:relative;display:inline-flex;padding:4px 10px;border-radius:5px;overflow:hidden">
+          <span style="position:absolute;left:0;top:0;bottom:0;width:{{ hlW }};background:#ffe1d8;border-radius:5px;transition:width .9s cubic-bezier(.65,0,.35,1) .4s"></span>
+          <span style="position:relative;font-size:14px;color:#262626">Work your way</span>
+        </div>
+        <h3 style="margin:0;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-0.03em;font-weight:600">Multiple Views</h3>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#4a4a4a;max-width:470px;text-wrap:pretty">Switch seamlessly between list, board, and timeline views to match how your team works. Whether you’re planning ahead or tracking day-to-day, you’re always in control.</p>
+        <a href="#" style="display:flex;align-items:center;gap:10px;background:#0a0a0a;color:#fff;padding:5px 5px 5px 18px;border-radius:999px;font-size:14px;font-weight:500;margin-top:20px" style-hover="color:#fff;background:#222">
+          Learn More
+          <span style="width:28px;height:28px;border-radius:50%;background:#fff;color:#0a0a0a;display:grid;place-items:center;font-size:14px">→</span>
+        </a>
+      </div>
+      <div style="position:relative;border-radius:10px;overflow:hidden;background:linear-gradient(160deg,#fff1ec 0%,#ffd9cc 55%,#ffc4b2 100%);padding:28px 20px;display:flex;justify-content:center;min-height:460px">
+        <div style="position:absolute;width:70%;height:50%;left:15%;top:35%;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,0.75),rgba(255,255,255,0));filter:blur(10px)"></div>
+        <div style="position:relative;width:min(100%,210px);background:rgba(255,255,255,0.55);border:1px solid rgba(255,255,255,0.9);border-radius:18px;padding:6px;display:flex;flex-direction:column;gap:6px;box-shadow:0 20px 40px -20px rgba(160,50,20,0.35)">
+          <div style="background:#fff;border-radius:12px;padding:12px">
+            <div style="font-size:12px;font-weight:600;padding-bottom:8px;border-bottom:1px solid #f0f0f0">AI Strategy Health</div>
+            <div style="display:flex;align-items:center;gap:12px;padding-top:10px">
+              <div style="position:relative;width:86px;height:86px;flex-shrink:0">
+                <svg viewBox="0 0 36 36" width="86" height="86" style="transform:rotate(-90deg)">
+                  <circle cx="18" cy="18" r="14" fill="none" stroke="#f2f2f2" stroke-width="5"></circle>
+                  <circle cx="18" cy="18" r="14" fill="none" stroke="#FF5533" stroke-width="5" pathLength="100" stroke-dasharray="{{ d1 }}" style="transition:stroke-dasharray 1.2s cubic-bezier(.2,.8,.2,1) .5s"></circle>
+                  <circle cx="18" cy="18" r="14" fill="none" stroke="#ffb3a0" stroke-width="5" pathLength="100" stroke-dasharray="{{ d2 }}" stroke-dashoffset="-62" style="transition:stroke-dasharray 1s cubic-bezier(.2,.8,.2,1) 1.1s"></circle>
+                  <circle cx="18" cy="18" r="14" fill="none" stroke="#6b1a0a" stroke-width="5" pathLength="100" stroke-dasharray="{{ d3 }}" stroke-dashoffset="-86" style="transition:stroke-dasharray .8s cubic-bezier(.2,.8,.2,1) 1.5s"></circle>
+                </svg>
+                <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+                  <span style="font-size:15px;font-weight:700">{{ pct }}%</span>
+                  <span style="font-size:7px;color:#6b6b6b">Profitable</span>
+                </div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:7px;font-size:9px;color:#4a4a4a">
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:2px;background:#FF5533"></span>Profitable</span>
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:2px;background:#ffb3a0"></span>Flat</span>
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:2px;background:#6b1a0a"></span>In loss</span>
+              </div>
+            </div>
+          </div>
+          <div style="background:#fff;border-radius:12px;padding:12px 10px">
+            <div style="font-size:12px;font-weight:600;padding:0 2px 8px">Active Algos</div>
+            <div style="display:grid;grid-template-columns:minmax(0,1fr) 52px;font-size:8px;color:#8a8a8a;padding:4px 2px;border-bottom:1px solid #f0f0f0"><span>Strategy</span><span>Status</span></div>
+            <sc-for list="{{ algoRows }}" as="r" hint-placeholder-count="4">
+              <div style="display:grid;grid-template-columns:minmax(0,1fr) 52px;align-items:center;padding:6px 2px;border-bottom:1px solid #f5f5f5;font-size:9px;background:{{ r.bg }};transition:background .4s">
+                <span style="display:flex;align-items:center;gap:6px;min-width:0">
+                  <span style="width:9px;height:9px;border-radius:2px;border:1px solid {{ r.bd }};background:{{ r.cb }};color:#fff;font-size:7px;display:grid;place-items:center;flex-shrink:0;transition:background .3s,border-color .3s">✓</span>
+                  <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.name }}</span>
+                </span>
+                <span style="font-size:8px;font-weight:600;color:{{ r.sc }}">{{ r.status }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="background:#fff;border-radius:12px;padding:12px">
+            <div style="font-size:12px;font-weight:600;padding-bottom:8px">Weekly P&amp;L</div>
+            <div style="height:70px;display:flex;align-items:flex-end;gap:5px">
+              <sc-for list="{{ bars }}" as="b" hint-placeholder-count="9">
+                <div style="flex:1;height:100%;background:#f6f6f6;border-radius:2px;display:flex;align-items:flex-end">
+                  <div style="width:100%;height:{{ b.h }};background:{{ b.c }};border-radius:2px;transition:height .8s cubic-bezier(.2,.8,.2,1) {{ b.d }}"></div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   </div>
+   <sc-for list="{{ stackCards }}" as="sc" hint-placeholder-count="3">
+    <div data-stack="1" style="position:sticky;top:{{ sc.top }}">
+     <div style="opacity:{{ sc.op }};transform:translateY({{ sc.y }}px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)">
+      <div data-card="1" style="transform-origin:50% 0%;will-change:transform;background:#fafafa;border:1px solid #e3e3e3;border-radius:18px;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px;align-items:center;box-shadow:0 -10px 30px -20px rgba(0,0,0,0.15)">
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:clamp(8px,3vw,28px)">
+          <div style="position:relative;display:inline-flex;padding:4px 10px;border-radius:5px;overflow:hidden">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:{{ sc.hl }};background:#ffe1d8;border-radius:5px;transition:width .9s cubic-bezier(.65,0,.35,1) .4s"></span>
+            <span style="position:relative;font-size:14px;color:#262626">{{ sc.badge }}</span>
+          </div>
+          <h3 style="margin:0;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-0.03em;font-weight:600">{{ sc.title }}</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:#4a4a4a;max-width:470px;text-wrap:pretty">{{ sc.text }}</p>
+          <a href="#" style="display:flex;align-items:center;gap:10px;background:#0a0a0a;color:#fff;padding:5px 5px 5px 18px;border-radius:999px;font-size:14px;font-weight:500;margin-top:20px" style-hover="color:#fff;background:#222">
+            Learn More
+            <span style="width:28px;height:28px;border-radius:50%;background:#fff;color:#0a0a0a;display:grid;place-items:center;font-size:14px">→</span>
+          </a>
+        </div>
+        <div style="position:relative;border-radius:10px;overflow:hidden;background:linear-gradient(160deg,#fff1ec 0%,#ffd9cc 55%,#ffc4b2 100%);padding:28px 20px;display:flex;align-items:center;justify-content:center;min-height:460px">
+          <div style="position:relative;width:min(100%,300px);background:rgba(255,255,255,0.55);border:1px solid rgba(255,255,255,0.9);border-radius:18px;padding:6px;box-shadow:0 20px 40px -20px rgba(160,50,20,0.35)">
+            <div style="background:#fff;border-radius:12px;padding:12px 16px;display:flex;flex-direction:column;gap:4px">
+              <div style="font-size:13px;font-weight:600;padding-bottom:10px;border-bottom:1px solid #f0f0f0">{{ sc.panel }}</div>
+              <sc-for list="{{ sc.rows }}" as="pr" hint-placeholder-count="4">
+                <div style="display:flex;flex-direction:column;gap:7px;padding:10px 0;border-bottom:1px solid #f5f5f5">
+                  <div style="display:flex;justify-content:space-between;gap:10px;font-size:12px">
+                    <span style="color:#3a3a3a">{{ pr.label }}</span>
+                    <span style="font-weight:600;color:{{ pr.c }}">{{ pr.value }}</span>
+                  </div>
+                  <div style="height:5px;border-radius:3px;background:#f3f3f3;overflow:hidden">
+                    <div style="height:100%;width:{{ pr.w }};background:{{ pr.bar }};border-radius:3px;transition:width 1s cubic-bezier(.2,.8,.2,1) {{ pr.d }}"></div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+   </sc-for>
+  </section>
+
+  <section id="methodology" data-screen-label="Methodology" style="position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:0 24px 140px;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start">
+    <div style="flex:1 1 320px;min-width:0;max-width:420px;position:sticky;top:96px;display:flex;flex-direction:column;align-items:flex-start;gap:18px">
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:#fff;border:1px solid #e7e7e7;font-size:13px;font-weight:500"><span style="width:7px;height:7px;border-radius:50%;background:#FF5533"></span>Methodology</div>
+      <h2 style="margin:0;font-size:clamp(32px,4.4vw,52px);line-height:1.05;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">How every algo is built and tested</h2>
+      <p style="margin:0;font-size:17px;line-height:1.6;color:#4a4a4a;text-wrap:pretty">A strategy reaches you only after it passes six stages, from first idea to live monitoring.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;width:100%;margin-top:10px;border:1px solid #e7e7e7;border-radius:16px;overflow:hidden;background:#e7e7e7">
+        <div style="background:#fff;padding:16px;display:flex;flex-direction:column;gap:2px"><span style="font-size:24px;font-weight:600;letter-spacing:-0.03em">6</span><span style="font-size:12px;color:#6b6b6b">Stages</span></div>
+        <div style="background:#fff;padding:16px;display:flex;flex-direction:column;gap:2px"><span style="font-size:24px;font-weight:600;letter-spacing:-0.03em">10 yrs</span><span style="font-size:12px;color:#6b6b6b">Data tested</span></div>
+        <div style="background:#fff;padding:16px;display:flex;flex-direction:column;gap:2px"><span style="font-size:24px;font-weight:600;letter-spacing:-0.03em">24/7</span><span style="font-size:12px;color:#6b6b6b">Monitoring</span></div>
+      </div>
+      <p style="margin:0;font-size:12px;line-height:1.55;color:#6b6b6b">Backtested and simulated results are hypothetical and do not guarantee future returns.</p>
+    </div>
+    <div style="flex:1.4 1 460px;min-width:0;display:flex;flex-direction:column">
+        <div style="position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding-bottom:28px">
+          <span style="position:absolute;left:27px;top:56px;bottom:0;width:2px;background:linear-gradient(180deg,#ffd2c7,#efefef)"></span>
+          <span style="position:relative;width:56px;height:56px;border-radius:16px;background:#0a0a0a;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -12px rgba(255,85,51,0.6)"><span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;font-variation-settings:'FILL' 1">science</span></span>
+          <div style="background:#fff;border:1px solid #e7e7e7;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:10px;transition:border-color .25s,transform .25s" style-hover="border-color:#ffb3a0;transform:translateX(4px)">
+            <div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:13px;font-weight:600;color:#FF5533;font-variant-numeric:tabular-nums">01</span><h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600">Research</h3></div>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#4a4a4a;text-wrap:pretty">Every strategy starts with a clear market idea, such as trend, mean reversion or volatility, tested against NSE and BSE market structure.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px"><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Idea</span><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Market structure</span></div>
+          </div>
+        </div>
+        <div style="position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding-bottom:28px">
+          <span style="position:absolute;left:27px;top:56px;bottom:0;width:2px;background:linear-gradient(180deg,#ffd2c7,#efefef)"></span>
+          <span style="position:relative;width:56px;height:56px;border-radius:16px;background:#0a0a0a;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -12px rgba(255,85,51,0.6)"><span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;font-variation-settings:'FILL' 1">history</span></span>
+          <div style="background:#fff;border:1px solid #e7e7e7;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:10px;transition:border-color .25s,transform .25s" style-hover="border-color:#ffb3a0;transform:translateX(4px)">
+            <div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:13px;font-weight:600;color:#FF5533;font-variant-numeric:tabular-nums">02</span><h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600">Backtest</h3></div>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#4a4a4a;text-wrap:pretty">Rules are tested on 10 years of historical data with brokerage, STT, exchange charges and slippage included.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px"><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">10 years data</span><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Costs included</span></div>
+          </div>
+        </div>
+        <div style="position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding-bottom:28px">
+          <span style="position:absolute;left:27px;top:56px;bottom:0;width:2px;background:linear-gradient(180deg,#ffd2c7,#efefef)"></span>
+          <span style="position:relative;width:56px;height:56px;border-radius:16px;background:#0a0a0a;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -12px rgba(255,85,51,0.6)"><span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;font-variation-settings:'FILL' 1">bolt</span></span>
+          <div style="background:#fff;border:1px solid #e7e7e7;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:10px;transition:border-color .25s,transform .25s" style-hover="border-color:#ffb3a0;transform:translateX(4px)">
+            <div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:13px;font-weight:600;color:#FF5533;font-variant-numeric:tabular-nums">03</span><h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600">Stress test</h3></div>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#4a4a4a;text-wrap:pretty">We replay extreme events like the 2020 crash, expiry days and gap openings, and run out-of-sample and walk-forward checks to avoid overfitting.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px"><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Out-of-sample</span><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Walk-forward</span></div>
+          </div>
+        </div>
+        <div style="position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding-bottom:28px">
+          <span style="position:absolute;left:27px;top:56px;bottom:0;width:2px;background:linear-gradient(180deg,#ffd2c7,#efefef)"></span>
+          <span style="position:relative;width:56px;height:56px;border-radius:16px;background:#0a0a0a;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -12px rgba(255,85,51,0.6)"><span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;font-variation-settings:'FILL' 1">receipt_long</span></span>
+          <div style="background:#fff;border:1px solid #e7e7e7;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:10px;transition:border-color .25s,transform .25s" style-hover="border-color:#ffb3a0;transform:translateX(4px)">
+            <div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:13px;font-weight:600;color:#FF5533;font-variant-numeric:tabular-nums">04</span><h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600">Paper trade</h3></div>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#4a4a4a;text-wrap:pretty">The strategy runs on live markets without capital, and live signals are compared with backtest behaviour before release.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px"><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Live market</span><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">No capital</span></div>
+          </div>
+        </div>
+        <div style="position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding-bottom:28px">
+          <span style="position:absolute;left:27px;top:56px;bottom:0;width:2px;background:linear-gradient(180deg,#ffd2c7,#efefef)"></span>
+          <span style="position:relative;width:56px;height:56px;border-radius:16px;background:#0a0a0a;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -12px rgba(255,85,51,0.6)"><span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;font-variation-settings:'FILL' 1">shield</span></span>
+          <div style="background:#fff;border:1px solid #e7e7e7;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:10px;transition:border-color .25s,transform .25s" style-hover="border-color:#ffb3a0;transform:translateX(4px)">
+            <div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:13px;font-weight:600;color:#FF5533;font-variant-numeric:tabular-nums">05</span><h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600">Deploy with guardrails</h3></div>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#4a4a4a;text-wrap:pretty">Each algo goes live with stop-loss, daily loss limits, position caps and a kill switch that you control.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px"><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Stop-loss</span><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Kill switch</span></div>
+          </div>
+        </div>
+        <div style="position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding-bottom:0px">
+          
+          <span style="position:relative;width:56px;height:56px;border-radius:16px;background:#0a0a0a;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -12px rgba(255,85,51,0.6)"><span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;font-variation-settings:'FILL' 1">monitoring</span></span>
+          <div style="background:#fff;border:1px solid #e7e7e7;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:10px;transition:border-color .25s,transform .25s" style-hover="border-color:#ffb3a0;transform:translateX(4px)">
+            <div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:13px;font-weight:600;color:#FF5533;font-variant-numeric:tabular-nums">06</span><h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600">Monitor and review</h3></div>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#4a4a4a;text-wrap:pretty">Strategies are monitored continuously and paused or retired if live behaviour drifts outside the tested range.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px"><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Drift alerts</span><span style="padding:4px 10px;border-radius:999px;background:#f5f5f5;font-size:12px;font-weight:500;color:#3a3a3a">Periodic review</span></div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section ref="{{ stRef }}" data-screen-label="Strategies" style="position:relative;z-index:1;height:{{ stLay.h }};background-color:#0a0a0a;background-image:radial-gradient(circle,rgba(255,255,255,0.09) 1px,transparent 1.2px);background-size:24px 24px;color:#fff;margin-bottom:120px">
+   <div style="position:{{ stLay.pos }};top:0;min-height:{{ stLay.minH }};overflow:hidden;display:flex;align-items:center;padding:{{ stLay.pad }}">
+    <div style="position:absolute;right:-200px;top:-200px;width:700px;height:600px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,85,51,0.16),rgba(255,85,51,0));pointer-events:none"></div>
+    <div style="position:relative;width:100%;max-width:1120px;margin:0 auto;display:flex;flex-wrap:{{ stLay.wrap }};gap:clamp(28px,4vw,56px);align-items:center">
+      <div style="flex:1 1 {{ stLay.lb }};min-width:0;display:flex;flex-direction:column;align-items:flex-start">
+        <span style="font-family:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#FF5533">Strategies</span>
+        <h2 style="margin:14px 0 0;font-size:clamp(28px,3.4vw,44px);line-height:1.05;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Effortless Trading with Expert Algos</h2>
+        <p style="margin:14px 0 0;font-size:17px;line-height:1.55;color:rgba(255,255,255,0.65);max-width:440px;text-wrap:pretty">Pick a strategy, check its drawdown and capital needs, and let it run.</p>
+        <h3 style="opacity:{{ st.fade }};transform:translateY({{ st.fy }});margin:36px 0 0;font-size:clamp(26px,3vw,38px);line-height:1.1;letter-spacing:-0.035em;font-weight:300">{{ st.name }}</h3>
+        <div style="position:relative;width:100%;max-width:480px;height:2px;background:rgba(255,255,255,0.12);margin-top:22px;overflow:hidden"><span style="position:absolute;left:0;top:0;bottom:0;width:{{ st.prog }};background:#FF5533;box-shadow:0 0 10px #FF5533"></span></div>
+        <div style="display:flex;gap:10px;margin-top:18px">
+          <sc-for list="{{ stDots }}" as="d" hint-placeholder-count="4">
+            <button onClick="{{ d.go }}" aria-label="{{ d.label }}" style="width:10px;height:10px;padding:0;border-radius:50%;border:1px solid {{ d.bd }};background:{{ d.bg }};cursor:pointer;transition:background .3s,border-color .3s"></button>
+          </sc-for>
+        </div>
+        <a href="Algos.dc.html" style="display:flex;align-items:center;gap:12px;background:#fff;color:#0a0a0a;padding:6px 6px 6px 20px;border-radius:999px;font-size:15px;font-weight:500;margin-top:28px" style-hover="color:#0a0a0a;background:#f0f0f0">
+          Explore all algos
+          <span style="width:32px;height:32px;border-radius:50%;background:#FF5533;display:grid;place-items:center;font-size:16px;color:#fff">→</span>
+        </a>
+      </div>
+      <div style="flex:1.15 1 {{ stLay.rb }};min-width:0;position:relative">
+        <div style="position:absolute;inset:0;transform:translate(12px,12px);border:1px solid rgba(255,85,51,0.18);background:rgba(255,85,51,0.04)"></div>
+        <div style="position:relative;background:#111;border:1px solid rgba(255,85,51,0.35)">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 22px;border-bottom:1px solid rgba(255,255,255,0.08)">
+            <span style="display:flex;align-items:center;gap:12px;min-width:0"><span style="width:36px;height:36px;flex-shrink:0;border-radius:9px;background:#FF5533;color:#fff;display:grid;place-items:center;font-size:13px;font-weight:600">{{ st.ini }}</span><span style="font-family:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:16px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ st.name }}</span></span>
+            <span style="font-family:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#FF5533;padding:4px 8px;border:1px solid rgba(255,85,51,0.5)">{{ st.tag }}</span>
+          </div>
+          <div style="padding:16px 22px 18px;display:flex;flex-direction:column;gap:14px">
+            <p style="opacity:{{ st.fade }};transform:translateY({{ st.fy }});margin:0;font-size:15px;line-height:1.55;color:rgba(255,255,255,0.65);height:4.65em;overflow:hidden;text-wrap:pretty">{{ st.desc }}</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(255,255,255,0.08)">
+              <div style="padding:14px 16px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.08)"><span style="font-family:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5)">Max Drawdown</span><span style="font-size:22px;font-weight:600;color:#ff7a5c">{{ st.dd }}</span></div>
+              <div style="padding:14px 16px;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5)">Min Capital</span><span style="font-size:22px;font-weight:600">{{ st.cap }}</span></div>
+            </div>
+            <div style="border:1px solid rgba(255,255,255,0.08);background:#0b0b0b">
+              <div style="display:flex;justify-content:space-between;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.08);font-family:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase"><span style="color:rgba(255,255,255,0.45)">{{ st.panel }}</span><span style="color:#FF5533">{{ st.panelR }}</span></div>
+              <div style="padding:12px 16px;height:172px;overflow:hidden;box-sizing:border-box;opacity:{{ st.fade }};transform:translateY({{ st.fy }});font-family:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.5">
+                <sc-if value="{{ st.p0 }}" hint-placeholder-val="{{ true }}">
+                  <div style="display:flex;flex-direction:column;gap:2px;line-height:1.45">
+                    <sc-for list="{{ stLines }}" as="l" hint-placeholder-count="7">
+                      <span style="color:{{ l.c }};opacity:{{ l.op }};transform:translateX({{ l.x }});transition:opacity .35s,transform .35s;white-space:pre-wrap">{{ l.t }}</span>
+                    </sc-for>
+                  </div>
+                </sc-if>
+                <sc-if value="{{ st.p1 }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex;flex-direction:column;gap:10px;padding-top:2px">
+                    <sc-for list="{{ stBars }}" as="b" hint-placeholder-count="4">
+                      <div style="display:flex;flex-direction:column;gap:6px">
+                        <div style="display:flex;justify-content:space-between;color:rgba(255,255,255,0.75)"><span>{{ b.label }}</span><span style="color:#fff">{{ b.v }}</span></div>
+                        <div style="height:6px;background:rgba(255,255,255,0.07)"><div style="height:100%;width:{{ b.w }};background:{{ b.c }};transition:width .3s"></div></div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+                <sc-if value="{{ st.p2 }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex;flex-direction:column;gap:5px">
+                    <sc-for list="{{ stSig }}" as="g" hint-placeholder-count="4">
+                      <div style="display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:10px;padding:7px 10px;line-height:1.3;border:1px solid {{ g.bd }};background:{{ g.bg }};opacity:{{ g.op }};transform:translateY({{ g.y }});transition:opacity .35s,transform .35s,background .3s">
+                        <span style="font-size:10px;font-weight:600;text-align:center;padding:3px 0;background:{{ g.cbg }};color:{{ g.cfg }}">{{ g.side }}</span>
+                        <span style="display:flex;align-items:baseline;gap:8px;min-width:0;white-space:nowrap;overflow:hidden"><span style="color:#fff;flex-shrink:0">{{ g.sym }}</span><span style="font-size:11px;color:rgba(255,255,255,0.5);overflow:hidden;text-overflow:ellipsis">{{ g.note }}</span></span>
+                        <span style="font-size:11px;color:rgba(255,255,255,0.5)">{{ g.t }}</span>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+                <sc-if value="{{ st.p3 }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex;align-items:center;gap:22px;padding-top:2px;flex-wrap:wrap">
+                    <div style="position:relative;width:110px;height:110px;flex-shrink:0">
+                      <svg viewBox="0 0 36 36" width="110" height="110" style="transform:rotate(-90deg)"><circle cx="18" cy="18" r="15" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="3"></circle><circle cx="18" cy="18" r="15" fill="none" stroke="#FF5533" stroke-width="3" stroke-linecap="round" pathLength="100" stroke-dasharray="{{ stRisk.dash }}" style="transition:stroke-dasharray .3s"></circle></svg>
+                      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-size:24px;font-weight:600;color:#fff;font-family:'Geist',system-ui,sans-serif">{{ stRisk.pct }}</span><span style="font-size:10px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">Risk used</span></div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:10px;flex:1;min-width:160px">
+                      <sc-for list="{{ stRisk.rows }}" as="r" hint-placeholder-count="3">
+                        <div style="display:flex;justify-content:space-between;gap:10px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.07)"><span style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.7)"><span style="width:7px;height:7px;background:{{ r.c }}"></span>{{ r.k }}</span><span style="color:#fff">{{ r.v }}</span></div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-if>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section style="position:relative;z-index:1;background:#f3f3f3;padding:100px 24px;margin-bottom:120px">
+    <div style="max-width:920px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px">
+      <sc-for list="{{ feats }}" as="f" hint-placeholder-count="8">
+        <div onMouseEnter="{{ f.enter }}" onMouseLeave="{{ f.leave }}" style="position:relative;overflow:hidden;background:#fff;border:1px solid #e1e2e3;border-radius:16px;box-shadow:rgba(36,36,36,0.7) 0 1px 5px -4px,rgba(36,36,36,0.05) 0 4px 8px 0;padding:26px 16px 28px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center;min-height:178px;cursor:default">
+          <div style="position:absolute;inset:0;z-index:2;background:#fff;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:20px 22px;opacity:{{ f.op }};transform:scale({{ f.sc }});transition:opacity .35s cubic-bezier(.2,.8,.2,1),transform .35s cubic-bezier(.2,.8,.2,1);pointer-events:none">
+            <span style="position:absolute;top:10px;left:10px;width:6px;height:6px;border-radius:50%;background:#e0e0e0;box-shadow:inset 0 1px 1.9px rgba(0,0,0,0.16)"></span>
+            <span style="position:absolute;top:10px;right:10px;width:6px;height:6px;border-radius:50%;background:#e0e0e0;box-shadow:inset 0 1px 1.9px rgba(0,0,0,0.16)"></span>
+            <span style="position:absolute;bottom:10px;left:10px;width:6px;height:6px;border-radius:50%;background:#e0e0e0;box-shadow:inset 0 1px 1.9px rgba(0,0,0,0.16)"></span>
+            <span style="position:absolute;bottom:10px;right:10px;width:6px;height:6px;border-radius:50%;background:#e0e0e0;box-shadow:inset 0 1px 1.9px rgba(0,0,0,0.16)"></span>
+            <div style="font-size:15px;font-weight:600;color:#292929">{{ f.label }}</div>
+            <div style="font-size:13px;line-height:1.45;color:#5a5a5a;text-wrap:pretty">{{ f.desc }}</div>
+          </div>
+          <div style="position:relative;width:64px;height:64px;border-radius:12px;background:#f4f4f4;border:1px solid #e2e2e2;box-shadow:inset 0 1px 0 #fff,0 1px 2px rgba(0,0,0,0.06);display:grid;place-items:center">
+            <span style="position:absolute;top:6px;left:6px;width:4px;height:4px;border-radius:50%;background:#cfcfcf"></span>
+            <span style="position:absolute;top:6px;right:6px;width:4px;height:4px;border-radius:50%;background:#cfcfcf"></span>
+            <span style="position:absolute;bottom:6px;left:6px;width:4px;height:4px;border-radius:50%;background:#cfcfcf"></span>
+            <span style="position:absolute;bottom:6px;right:6px;width:4px;height:4px;border-radius:50%;background:#cfcfcf"></span>
+            <span style="font-family:'Material Symbols Rounded';font-size:28px;line-height:1;color:#1f1f1f;font-variation-settings:'FILL' 1,'wght' 500">{{ f.icon }}</span>
+          </div>
+          <div style="font-size:15px;font-weight:600;line-height:1.3;letter-spacing:-0.01em;max-width:160px;text-wrap:balance">{{ f.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="position:relative;z-index:1;padding:0 0 140px">
+    <div style="max-width:720px;margin:0 auto;padding:0 24px;display:flex;flex-direction:column;align-items:center;text-align:center">
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:#fff;border:1px solid #e7e7e7;font-size:13px;font-weight:500">
+        <span style="width:7px;height:7px;border-radius:50%;background:#FF5533"></span>
+        Integrations
+      </div>
+      <h2 style="margin:20px 0 0;font-size:clamp(32px,4.4vw,52px);line-height:1.05;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Seamless integrations with your favorite broker</h2>
+      <p style="margin:16px 0 0;font-size:17px;line-height:1.55;color:#4a4a4a;max-width:520px;text-wrap:pretty">Connect your existing account in a few clicks. Your funds stay with your broker.</p>
+    </div>
+    <div style="max-width:1120px;margin:56px auto 0;padding:0 24px;display:flex;align-items:center;gap:32px;flex-wrap:wrap">
+      <div style="flex:1 1 400px;min-width:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)">
+        <sc-for list="{{ brokerRows }}" as="br" hint-placeholder-count="1">
+          <div style="display:flex;gap:56px;width:max-content;animation:{{ br.anim }};padding:8px 0">
+            <sc-for list="{{ br.items }}" as="b" hint-placeholder-count="8">
+              <div style="display:flex;align-items:center;justify-content:center;flex-shrink:0;height:56px;width:150px">
+                <img src="{{ b.src }}" alt="{{ b.name }}" loading="lazy" style="max-height:40px;max-width:150px;width:auto;height:auto;object-fit:contain;display:block"></img>
+              </div>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:40px">
+      <a href="#" style="display:flex;align-items:center;gap:12px;background:#0a0a0a;color:#fff;padding:6px 6px 6px 20px;border-radius:999px;font-size:15px;font-weight:500" style-hover="color:#fff;background:#222">
+        Connect your broker
+        <span style="width:32px;height:32px;border-radius:50%;background:#FF5533;display:grid;place-items:center;font-size:16px;color:#fff">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section ref="{{ f3Ref }}" style="position:relative;z-index:1;background:#0a0a0a;color:#fff;padding:120px 24px;margin-bottom:120px;overflow:hidden">
+    <div style="position:absolute;left:50%;top:-220px;width:900px;height:500px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(255,85,51,0.28),rgba(255,85,51,0));pointer-events:none"></div>
+    <div style="position:relative;max-width:720px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center">
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);font-size:13px;font-weight:500">
+        <span style="width:7px;height:7px;border-radius:50%;background:#FF5533"></span>
+        Platform
+      </div>
+      <h2 style="margin:20px 0 0;font-size:clamp(32px,4.4vw,52px);line-height:1.05;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Everything you need to trade on autopilot</h2>
+    </div>
+    <div style="position:relative;max-width:1120px;margin:64px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:20px">
+      <div style="perspective:1100px;opacity:{{ f3op }};transform:{{ f3enter }};transform-origin:50% 100%;transition:opacity .9s cubic-bezier(.2,.8,.2,1) 0s,transform 1s cubic-bezier(.2,.8,.2,1) 0s">
+        <div onMouseMove="{{ f3Move }}" onMouseLeave="{{ f3Leave }}" style="position:relative;height:100%;border-radius:20px;background:linear-gradient(180deg,#171717 0%,#0f0f0f 100%);border:1px solid rgba(255,255,255,0.1);padding:10px;display:flex;flex-direction:column;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;box-shadow:0 20px 40px -24px rgba(0,0,0,0.8)">
+          <div data-shine="1" style="position:absolute;inset:0;border-radius:20px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(255,85,51,0.18),transparent 45%);opacity:0;transition:opacity .4s;pointer-events:none"></div>
+          <div style="position:relative;transform:translateZ(40px);height:230px;border-radius:14px;background:radial-gradient(120% 90% at 50% 0%,#1c1c1c 0%,#0b0b0b 70%);border:1px solid rgba(255,255,255,0.08);overflow:hidden">
+            <div style="position:absolute;inset:0;padding:16px;display:flex;flex-direction:column;gap:6px">
+              <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-size:11px;color:rgba(255,255,255,0.55);letter-spacing:0.04em;text-transform:uppercase">Today’s P&amp;L</span><span style="display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,0.7)"><span style="position:relative;width:8px;height:8px;display:inline-block"><span style="position:absolute;inset:0;border-radius:50%;background:#FF5533;animation:f3pulse 1.6s ease-out infinite"></span><span style="position:absolute;inset:0;border-radius:50%;background:#FF5533"></span></span>Live</span></div>
+              <div style="display:flex;align-items:baseline;gap:10px"><span style="font-size:28px;font-weight:600;letter-spacing:-0.03em;font-variant-numeric:tabular-nums">{{ live.pnl }}</span><span style="font-size:12px;font-weight:600;color:#3ddc84;padding:2px 8px;border-radius:999px;background:rgba(61,220,132,0.12)">{{ live.pct }}</span></div>
+              <svg viewBox="0 0 240 90" preserveAspectRatio="none" style="width:100%;flex:1;min-height:0;display:block">
+                <defs><linearGradient id="f3g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF5533" stop-opacity="0.35"></stop><stop offset="1" stop-color="#FF5533" stop-opacity="0"></stop></linearGradient></defs>
+                <path d="{{ live.area }}" fill="url(#f3g)"></path>
+                <polyline points="{{ live.line }}" fill="none" stroke="#FF5533" stroke-width="2" vector-effect="non-scaling-stroke"></polyline>
+              </svg>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+                <div style="padding:7px 9px;border-radius:8px;background:rgba(255,255,255,0.05);display:flex;flex-direction:column;gap:2px"><span style="font-size:10px;color:rgba(255,255,255,0.55)">Positions</span><span style="font-size:13px;font-weight:600">4</span></div>
+                <div style="padding:7px 9px;border-radius:8px;background:rgba(255,255,255,0.05);display:flex;flex-direction:column;gap:2px"><span style="font-size:10px;color:rgba(255,255,255,0.55)">Orders</span><span style="font-size:13px;font-weight:600">{{ live.orders }}</span></div>
+                <div style="padding:7px 9px;border-radius:8px;background:rgba(255,255,255,0.05);display:flex;flex-direction:column;gap:2px"><span style="font-size:10px;color:rgba(255,255,255,0.55)">Win rate</span><span style="font-size:13px;font-weight:600">64%</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="position:relative;transform:translateZ(28px);padding:20px 12px 14px;display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600;text-wrap:balance">Real-Time Performance Dashboard</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:rgba(255,255,255,0.68);text-wrap:pretty">Track P&amp;L, open positions and every order across all your algos, updated live as the market moves.</p>
+          </div>
+        </div>
+      </div>
+      <div style="perspective:1100px;opacity:{{ f3op }};transform:{{ f3enter }};transform-origin:50% 100%;transition:opacity .9s cubic-bezier(.2,.8,.2,1) 0.12s,transform 1s cubic-bezier(.2,.8,.2,1) 0.12s">
+        <div onMouseMove="{{ f3Move }}" onMouseLeave="{{ f3Leave }}" style="position:relative;height:100%;border-radius:20px;background:linear-gradient(180deg,#171717 0%,#0f0f0f 100%);border:1px solid rgba(255,255,255,0.1);padding:10px;display:flex;flex-direction:column;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;box-shadow:0 20px 40px -24px rgba(0,0,0,0.8)">
+          <div data-shine="1" style="position:absolute;inset:0;border-radius:20px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(255,85,51,0.18),transparent 45%);opacity:0;transition:opacity .4s;pointer-events:none"></div>
+          <div style="position:relative;transform:translateZ(40px);height:230px;border-radius:14px;background:radial-gradient(120% 90% at 50% 0%,#1c1c1c 0%,#0b0b0b 70%);border:1px solid rgba(255,255,255,0.08);overflow:hidden">
+            <div style="position:absolute;inset:0;padding:16px;display:flex;flex-direction:column;gap:10px">
+              <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-size:11px;color:rgba(255,255,255,0.55);letter-spacing:0.04em;text-transform:uppercase">Backtest · 2015–2025</span><span style="font-size:11px;font-weight:600;color:#FF5533">{{ bt.year }}</span></div>
+              <div style="position:relative;flex:1;min-height:0">
+                <svg viewBox="0 0 240 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%"><polyline points="{{ btLine }}" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2" vector-effect="non-scaling-stroke"></polyline></svg>
+                <svg viewBox="0 0 240 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;clip-path:inset(0 {{ bt.clip }} 0 0);transition:clip-path .15s linear"><polyline points="{{ btLine }}" fill="none" stroke="#FF5533" stroke-width="2" vector-effect="non-scaling-stroke"></polyline></svg>
+                <div style="position:absolute;top:0;bottom:0;left:{{ bt.x }};width:1px;background:linear-gradient(180deg,transparent,#FF5533,transparent);transition:left .15s linear"></div>
+                <span style="position:absolute;left:34%;top:62%;font-size:10px;padding:2px 6px;border-radius:4px;background:rgba(255,85,51,0.15);color:#ff9a82;opacity:{{ bt.m1 }};transition:opacity .3s">2020 crash ✓</span>
+                <span style="position:absolute;left:66%;top:44%;font-size:10px;padding:2px 6px;border-radius:4px;background:rgba(255,85,51,0.15);color:#ff9a82;opacity:{{ bt.m2 }};transition:opacity .3s">2022 rate shock ✓</span>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+                <div style="padding:7px 9px;border-radius:8px;background:rgba(255,255,255,0.05);display:flex;flex-direction:column;gap:2px"><span style="font-size:10px;color:rgba(255,255,255,0.55)">Trades</span><span style="font-size:13px;font-weight:600;font-variant-numeric:tabular-nums">{{ bt.trades }}</span></div>
+                <div style="padding:7px 9px;border-radius:8px;background:rgba(255,255,255,0.05);display:flex;flex-direction:column;gap:2px"><span style="font-size:10px;color:rgba(255,255,255,0.55)">CAGR</span><span style="font-size:13px;font-weight:600;color:#3ddc84">24.6%</span></div>
+                <div style="padding:7px 9px;border-radius:8px;background:rgba(255,255,255,0.05);display:flex;flex-direction:column;gap:2px"><span style="font-size:10px;color:rgba(255,255,255,0.55)">Max DD</span><span style="font-size:13px;font-weight:600">8.5%</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="position:relative;transform:translateZ(28px);padding:20px 12px 14px;display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600;text-wrap:balance">Backtested &amp; Stress-Tested</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:rgba(255,255,255,0.68);text-wrap:pretty">Every strategy is tested on years of historical data and extreme market events before it goes live.</p>
+          </div>
+        </div>
+      </div>
+      <div style="perspective:1100px;opacity:{{ f3op }};transform:{{ f3enter }};transform-origin:50% 100%;transition:opacity .9s cubic-bezier(.2,.8,.2,1) 0.24s,transform 1s cubic-bezier(.2,.8,.2,1) 0.24s">
+        <div onMouseMove="{{ f3Move }}" onMouseLeave="{{ f3Leave }}" style="position:relative;height:100%;border-radius:20px;background:linear-gradient(180deg,#171717 0%,#0f0f0f 100%);border:1px solid rgba(255,255,255,0.1);padding:10px;display:flex;flex-direction:column;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;box-shadow:0 20px 40px -24px rgba(0,0,0,0.8)">
+          <div data-shine="1" style="position:absolute;inset:0;border-radius:20px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(255,85,51,0.18),transparent 45%);opacity:0;transition:opacity .4s;pointer-events:none"></div>
+          <div style="position:relative;transform:translateZ(40px);height:230px;border-radius:14px;background:radial-gradient(120% 90% at 50% 0%,#1c1c1c 0%,#0b0b0b 70%);border:1px solid rgba(255,255,255,0.08);overflow:hidden">
+            <div style="position:absolute;inset:0;padding:16px;display:flex;flex-direction:column;gap:8px">
+              <div style="position:relative;height:96px;display:flex;justify-content:center">
+                <svg viewBox="0 0 120 64" width="170" height="90" style="overflow:visible">
+                  <path d="M10 60 A50 50 0 0 1 110 60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="9" stroke-linecap="round"></path>
+                  <path d="M10 60 A50 50 0 0 1 110 60" fill="none" stroke="#FF5533" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="{{ risk.dash }}" style="transition:stroke-dasharray .6s cubic-bezier(.2,.8,.2,1)"></path>
+                  <g style="transform-origin:60px 60px;transform:rotate({{ risk.deg }});transition:transform .6s cubic-bezier(.2,.8,.2,1)"><line x1="60" y1="60" x2="60" y2="20" stroke="#fff" stroke-width="2.5" stroke-linecap="round"></line></g>
+                  <circle cx="60" cy="60" r="4.5" fill="#fff"></circle>
+                </svg>
+                <div style="position:absolute;bottom:-4px;left:0;right:0;text-align:center;font-size:11px;color:rgba(255,255,255,0.6)">Daily risk used · <span style="color:#fff;font-weight:600;font-variant-numeric:tabular-nums">{{ risk.pct }}</span></div>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.05)"><span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:12px;font-weight:500">Stop-loss per trade</span><span style="font-size:10px;color:rgba(255,255,255,0.55)">1.5% of capital</span></span><span style="width:30px;height:17px;border-radius:999px;background:#FF5533;position:relative"><span style="position:absolute;right:2px;top:2px;width:13px;height:13px;border-radius:50%;background:#fff"></span></span></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.05)"><span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:12px;font-weight:500">Daily loss limit</span><span style="font-size:10px;color:rgba(255,255,255,0.55)">₹10,000 · auto square-off</span></span><span style="width:30px;height:17px;border-radius:999px;background:#FF5533;position:relative"><span style="position:absolute;right:2px;top:2px;width:13px;height:13px;border-radius:50%;background:#fff"></span></span></div>
+            </div>
+          </div>
+          <div style="position:relative;transform:translateZ(28px);padding:20px 12px 14px;display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600;text-wrap:balance">Precision Risk Management</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:rgba(255,255,255,0.68);text-wrap:pretty">Stop-loss, daily loss limits and position sizing are enforced automatically on every trade.</p>
+          </div>
+        </div>
+      </div>
+      <div style="perspective:1100px;opacity:{{ f3op }};transform:{{ f3enter }};transform-origin:50% 100%;transition:opacity .9s cubic-bezier(.2,.8,.2,1) 0.18s,transform 1s cubic-bezier(.2,.8,.2,1) 0.18s">
+        <div onMouseMove="{{ f3Move }}" onMouseLeave="{{ f3Leave }}" style="position:relative;height:100%;border-radius:20px;background:linear-gradient(180deg,#171717 0%,#0f0f0f 100%);border:1px solid rgba(255,255,255,0.1);padding:10px;display:flex;flex-direction:column;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;box-shadow:0 20px 40px -24px rgba(0,0,0,0.8)">
+          <div data-shine="1" style="position:absolute;inset:0;border-radius:20px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(255,85,51,0.18),transparent 45%);opacity:0;transition:opacity .4s;pointer-events:none"></div>
+          <div style="position:relative;transform:translateZ(40px);height:230px;border-radius:14px;background:radial-gradient(120% 90% at 50% 0%,#1c1c1c 0%,#0b0b0b 70%);border:1px solid rgba(255,255,255,0.08);overflow:hidden">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column">
+              <div style="display:flex;align-items:center;gap:6px;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,0.07)"><span style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.18)"></span><span style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.18)"></span><span style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.18)"></span><span style="margin-left:6px;font-size:11px;color:rgba(255,255,255,0.55);font-family:ui-monospace,SFMono-Regular,Menlo,monospace">decision_engine.py</span></div>
+              <pre style="margin:0;flex:1;padding:12px 14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;line-height:1.55;color:rgba(255,255,255,0.78);white-space:pre;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 65%,transparent);mask-image:linear-gradient(180deg,#000 65%,transparent)">{{ ml.code }}<span style="display:inline-block;width:6px;height:12px;background:#FF5533;vertical-align:-2px;animation:f3blink 1s steps(1) infinite"></span></pre>
+              <div style="position:absolute;left:12px;right:12px;bottom:12px;display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-radius:10px;background:rgba(20,20,20,0.92);border:1px solid rgba(255,85,51,0.35);opacity:{{ ml.op }};transform:translateY({{ ml.y }});transition:opacity .4s,transform .4s cubic-bezier(.2,.8,.2,1)">
+                <span style="font-size:12px;font-weight:600">ENTER LONG · NIFTY</span><span style="font-size:11px;color:#ff9a82">confidence 0.81</span>
+              </div>
+            </div>
+          </div>
+          <div style="position:relative;transform:translateZ(28px);padding:20px 12px 14px;display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600;text-wrap:balance">ML-Powered Decision Engine</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:rgba(255,255,255,0.68);text-wrap:pretty">Machine learning models read market regimes and adjust entries and exits as conditions change.</p>
+          </div>
+        </div>
+      </div>
+      <div style="perspective:1100px;opacity:{{ f3op }};transform:{{ f3enter }};transform-origin:50% 100%;transition:opacity .9s cubic-bezier(.2,.8,.2,1) 0.3s,transform 1s cubic-bezier(.2,.8,.2,1) 0.3s">
+        <div onMouseMove="{{ f3Move }}" onMouseLeave="{{ f3Leave }}" style="position:relative;height:100%;border-radius:20px;background:linear-gradient(180deg,#171717 0%,#0f0f0f 100%);border:1px solid rgba(255,255,255,0.1);padding:10px;display:flex;flex-direction:column;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;box-shadow:0 20px 40px -24px rgba(0,0,0,0.8)">
+          <div data-shine="1" style="position:absolute;inset:0;border-radius:20px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(255,85,51,0.18),transparent 45%);opacity:0;transition:opacity .4s;pointer-events:none"></div>
+          <div style="position:relative;transform:translateZ(40px);height:230px;border-radius:14px;background:radial-gradient(120% 90% at 50% 0%,#1c1c1c 0%,#0b0b0b 70%);border:1px solid rgba(255,255,255,0.08);overflow:hidden">
+            <div style="position:absolute;inset:0;padding:20px 16px;display:flex;flex-direction:column;justify-content:center;gap:26px">
+              <div style="position:relative;display:flex;justify-content:space-between;align-items:flex-start">
+                <div style="position:absolute;left:28px;right:28px;top:27px;height:2px;background:rgba(255,255,255,0.1)"></div>
+                <div style="position:absolute;left:28px;top:27px;height:2px;width:{{ dep.w }};background:#FF5533;box-shadow:0 0 12px #FF5533;transition:width .7s cubic-bezier(.65,0,.35,1)"></div>
+                <sc-for list="{{ dep.nodes }}" as="n" hint-placeholder-count="3">
+                  <div style="position:relative;display:flex;flex-direction:column;align-items:center;gap:10px;width:76px">
+                    <div style="width:56px;height:56px;border-radius:14px;display:grid;place-items:center;background:{{ n.bg }};border:1px solid {{ n.bd }};box-shadow:{{ n.sh }};transition:background .4s,border-color .4s,box-shadow .4s">
+                      <span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;color:#fff;font-variation-settings:'FILL' 1,'wght' 500">{{ n.icon }}</span>
+                    </div>
+                    <span style="font-size:11px;text-align:center;color:{{ n.tc }};transition:color .4s">{{ n.label }}</span>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="align-self:center;display:flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);font-size:12px">
+                <span style="width:7px;height:7px;border-radius:50%;background:{{ dep.dot }}"></span>{{ dep.status }}
+              </div>
+            </div>
+          </div>
+          <div style="position:relative;transform:translateZ(28px);padding:20px 12px 14px;display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600;text-wrap:balance">Plug &amp; Play Algorithm Deployment</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:rgba(255,255,255,0.68);text-wrap:pretty">Pick an algo, connect your broker and go live in minutes. No code or servers required.</p>
+          </div>
+        </div>
+      </div>
+      <div style="perspective:1100px;opacity:{{ f3op }};transform:{{ f3enter }};transform-origin:50% 100%;transition:opacity .9s cubic-bezier(.2,.8,.2,1) 0.42s,transform 1s cubic-bezier(.2,.8,.2,1) 0.42s">
+        <div onMouseMove="{{ f3Move }}" onMouseLeave="{{ f3Leave }}" style="position:relative;height:100%;border-radius:20px;background:linear-gradient(180deg,#171717 0%,#0f0f0f 100%);border:1px solid rgba(255,255,255,0.1);padding:10px;display:flex;flex-direction:column;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;box-shadow:0 20px 40px -24px rgba(0,0,0,0.8)">
+          <div data-shine="1" style="position:absolute;inset:0;border-radius:20px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(255,85,51,0.18),transparent 45%);opacity:0;transition:opacity .4s;pointer-events:none"></div>
+          <div style="position:relative;transform:translateZ(40px);height:230px;border-radius:14px;background:radial-gradient(120% 90% at 50% 0%,#1c1c1c 0%,#0b0b0b 70%);border:1px solid rgba(255,255,255,0.08);overflow:hidden">
+            <div style="position:absolute;inset:0;padding:14px;display:flex;flex-direction:column;gap:8px">
+              <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-size:11px;color:rgba(255,255,255,0.55);letter-spacing:0.04em;text-transform:uppercase">TradingView webhook</span><span style="display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,0.7)"><span style="position:relative;width:8px;height:8px;display:inline-block"><span style="position:absolute;inset:0;border-radius:50%;background:#FF5533;animation:f3pulse 1.6s ease-out infinite"></span><span style="position:absolute;inset:0;border-radius:50%;background:#FF5533"></span></span>Listening</span></div>
+              <sc-for list="{{ tv }}" as="s" hint-placeholder-count="4">
+                <div style="display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:10px;padding:8px 10px;border-radius:9px;background:{{ s.bg }};border:1px solid {{ s.bd }};opacity:{{ s.op }};transition:background .4s,border-color .4s">
+                  <span style="font-size:10px;font-weight:700;text-align:center;padding:3px 0;border-radius:5px;background:{{ s.cbg }};color:{{ s.cfg }}">{{ s.side }}</span>
+                  <span style="display:flex;flex-direction:column;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ s.sym }}</span><span style="font-size:10px;color:rgba(255,255,255,0.5)">{{ s.note }}</span></span>
+                  <span style="font-size:10px;color:rgba(255,255,255,0.55)">{{ s.time }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+          <div style="position:relative;transform:translateZ(28px);padding:20px 12px 14px;display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font-size:20px;line-height:1.25;letter-spacing:-0.02em;font-weight:600;text-wrap:balance">Trading View Signals</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:rgba(255,255,255,0.68);text-wrap:pretty">Turn TradingView alerts into executed orders through webhooks, with your risk rules applied.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:20px 24px 140px">
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center">
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:4px 12px 4px 4px;border-radius:999px;background:#fff;border:1px solid rgba(0,0,0,0.15);font-size:13px;font-weight:500">
+        <span style="width:22px;height:22px;border-radius:7px;background:#FF5533;color:#fff;display:grid;place-items:center;font-size:12px">★</span>
+        Trader stories
+      </div>
+      <h2 style="margin:20px 0 0;font-size:clamp(32px,4.4vw,52px);line-height:1.05;letter-spacing:-0.04em;font-weight:600;max-width:640px;text-wrap:balance">Trusted by traders who run on algos</h2>
+      <p style="margin:16px 0 0;font-size:17px;line-height:1.55;color:#4a4a4a;max-width:520px;text-wrap:pretty">See how traders automate entries, control risk and spend less time watching screens.</p>
+      <div style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:14px;color:#2b2b2b">
+        <span style="color:#FF5533;letter-spacing:1px">★★★★★</span>
+        <span style="font-weight:600">4.8</span>
+        <span>Trusted by 1,200+ traders</span>
+      </div>
+    </div>
+    <div style="margin-top:56px;height:640px;overflow:hidden;display:flex;gap:16px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 14%,#000 86%,transparent);mask-image:linear-gradient(180deg,transparent,#000 14%,#000 86%,transparent)">
+      <sc-for list="{{ cols }}" as="col" hint-placeholder-count="3">
+        <div style="overflow:hidden;min-width:0;flex:1 1 0;height:100%">
+          <div style="display:flex;flex-direction:column;gap:16px;animation:{{ col.anim }}" style-hover="animation-play-state:paused">
+            <sc-for list="{{ col.items }}" as="t" hint-placeholder-count="4">
+              <div style="background:#fff;border:1px solid rgba(0,0,0,0.1);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:20px">
+                <p style="margin:0;font-size:15px;line-height:1.6;color:#2b2b2b;text-wrap:pretty">{{ t.quote }}</p>
+                <div style="display:flex;align-items:center;gap:12px">
+                  <div style="width:40px;height:40px;border-radius:50%;background:{{ t.bg }};color:{{ t.fg }};display:grid;place-items:center;font-size:13px;font-weight:600;flex-shrink:0">{{ t.ini }}</div>
+                  <div style="display:flex;flex-direction:column;gap:2px">
+                    <span style="font-size:14px;font-weight:600">{{ t.name }}</span>
+                    <span style="font-size:13px;color:#6b6b6b">{{ t.role }}</span>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <footer style="position:relative;z-index:1;background:#0a0a0a;color:#fff;overflow:hidden">
+    <div style="position:absolute;left:50%;bottom:-260px;width:1000px;height:520px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(255,85,51,0.25),rgba(255,85,51,0));pointer-events:none"></div>
+    <div style="position:relative;max-width:1120px;margin:0 auto;padding:96px 24px 0">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="display:flex;flex-direction:column;gap:14px;max-width:560px">
+          <h2 style="margin:0;font-size:clamp(32px,4.4vw,52px);line-height:1.05;letter-spacing:-0.04em;font-weight:600;text-wrap:balance">Start trading on autopilot</h2>
+          <p style="margin:0;font-size:17px;line-height:1.55;color:rgba(255,255,255,0.68);text-wrap:pretty">Pick an algo, connect your broker and go live in minutes.</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a href="#" style="display:flex;align-items:center;gap:12px;background:#fff;color:#0a0a0a;padding:6px 6px 6px 20px;border-radius:999px;font-size:15px;font-weight:500" style-hover="color:#0a0a0a;background:#f0f0f0">
+            Start free trial
+            <span style="width:32px;height:32px;border-radius:50%;background:#FF5533;display:grid;place-items:center;font-size:16px;color:#fff">→</span>
+          </a>
+          <a href="#" style="display:flex;align-items:center;height:44px;padding:0 20px;border-radius:999px;border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:15px;font-weight:500" style-hover="color:#fff;border-color:#fff">Talk to us</a>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:40px;padding:56px 0">
+        <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;min-width:0;max-width:340px">
+          <a href="#" style="display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;letter-spacing:-0.02em;color:#fff">
+            <img src="./assets/logo-mark-white.png" alt="" style="width:28px;height:28px;object-fit:contain;display:block;border-radius:7px"></img>
+            ALGORICK
+          </a>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:rgba(255,255,255,0.6);text-wrap:pretty">Algorithmic trading for Indian markets. Backtested strategies, built-in risk controls and one-click broker connect.</p>
+          <div style="display:flex;gap:8px;margin-top:4px">
+            <a href="#" aria-label="X" style="width:36px;height:36px;border-radius:10px;border:1px solid rgba(255,255,255,0.14);display:grid;place-items:center;color:#fff;font-size:13px;font-weight:600" style-hover="color:#fff;border-color:#FF5533;background:rgba(255,85,51,0.12)">X</a>
+            <a href="#" aria-label="LinkedIn" style="width:36px;height:36px;border-radius:10px;border:1px solid rgba(255,255,255,0.14);display:grid;place-items:center;color:#fff;font-size:13px;font-weight:600" style-hover="color:#fff;border-color:#FF5533;background:rgba(255,85,51,0.12)">in</a>
+            <a href="#" aria-label="YouTube" style="width:36px;height:36px;border-radius:10px;border:1px solid rgba(255,255,255,0.14);display:grid;place-items:center;color:#fff" style-hover="color:#fff;border-color:#FF5533;background:rgba(255,85,51,0.12)"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1;font-variation-settings:'FILL' 1">play_arrow</span></a>
+            <a href="#" aria-label="Telegram" style="width:36px;height:36px;border-radius:10px;border:1px solid rgba(255,255,255,0.14);display:grid;place-items:center;color:#fff" style-hover="color:#fff;border-color:#FF5533;background:rgba(255,85,51,0.12)"><span style="font-family:'Material Symbols Rounded';font-size:18px;line-height:1;font-variation-settings:'FILL' 1">send</span></a>
+          </div>
+          <div style="display:flex;flex-wrap:nowrap;align-items:center;gap:10px;margin-top:8px"><div title="ISO 27001 Certified" style="width:56px;height:56px;flex-shrink:0;border-radius:12px;background:#fff;display:grid;place-items:center;padding:6px"><img src="uploads/pasted-1790885487484-0.png" alt="ISO 27001 Certified" style="max-width:100%;max-height:100%;object-fit:contain;display:block"></div><div title="Data protected" style="width:56px;height:56px;flex-shrink:0;border-radius:12px;background:#fff;display:grid;place-items:center;padding:6px"><img src="uploads/pasted-1790885813789-0.png" alt="Data protected" style="max-width:100%;max-height:100%;object-fit:contain;display:block"></div><div title="Cloud hosted" style="width:56px;height:56px;flex-shrink:0;border-radius:12px;background:#fff;display:grid;place-items:center;padding:6px"><img src="uploads/pasted-1790886228228-0.png" alt="Cloud hosted" style="max-width:100%;max-height:100%;object-fit:contain;display:block"></div></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:14px">
+          <span style="font-size:13px;font-weight:600;color:#fff;margin-bottom:4px">Product</span>
+          <a href="Products.dc.html" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Products</a>
+          <a href="Algos.dc.html" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Algos</a>
+          <a href="#" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Features</a>
+          <a href="#" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Integrations</a>
+          <a href="#" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Pricing</a>
+          <a href="#" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Changelog</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:14px">
+          <span style="font-size:13px;font-weight:600;color:#fff;margin-bottom:4px">Company</span>
+          <a href="#" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">About</a>
+          <a href="Blog.dc.html" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Blog</a>
+          <a href="#" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Careers</a>
+          <a href="FAQ.dc.html" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">FAQ</a>
+          <a href="Contact.dc.html" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Contact</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:14px">
+          <span style="font-size:13px;font-weight:600;color:#fff;margin-bottom:4px">Legal</span>
+          <a href="Terms.dc.html" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Terms of Service</a>
+          <a href="Privacy.dc.html" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Privacy Policy</a>
+          <a href="Risk-Disclosure.dc.html" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Risk Disclosure</a>
+          <a href="Refund-Policy.dc.html" style="color:rgba(255,255,255,0.65)" style-hover="color:#FF5533">Refund Policy</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:14px">
+          <span style="font-size:13px;font-weight:600;color:#fff;margin-bottom:4px">Contact</span>
+          <span style="display:flex;gap:8px;align-items:flex-start;color:rgba(255,255,255,0.65);line-height:1.5"><span style="font-family:'Material Symbols Rounded';font-size:18px;line-height:1.2;color:#FF5533;font-variation-settings:'FILL' 1">location_on</span>Paralakhemundi, Odisha 761200, India</span>
+          <a href="tel:+919040667427" style="display:flex;gap:8px;align-items:center;color:rgba(255,255,255,0.65)" style-hover="color:#FF5533"><span style="font-family:'Material Symbols Rounded';font-size:18px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">call</span>+91 90406 67427</a>
+          <a href="mailto:info@algorick.com" style="display:flex;gap:8px;align-items:center;color:rgba(255,255,255,0.65)" style-hover="color:#FF5533"><span style="font-family:'Material Symbols Rounded';font-size:18px;line-height:1;color:#FF5533;font-variation-settings:'FILL' 1">mail</span>info@algorick.com</a>
+        </div>
+      </div>
+
+      <p style="margin:0;padding:20px 0;border-top:1px solid rgba(255,255,255,0.1);font-size:12px;line-height:1.6;color:rgba(255,255,255,0.5);text-wrap:pretty">Trading in securities and derivatives involves market risk. Past performance and backtested results do not guarantee future returns. Read all related documents carefully before investing.</p>
+
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:0 0 28px;font-size:13px;color:rgba(255,255,255,0.5)">
+        <span>© 2026 ALGORICK TECHNOLOGIES PRIVATE LIMITED. All rights reserved.</span>
+        <span>Made in India</span>
+      </div>
+
+      <div aria-hidden="true" style="font-size:clamp(56px,15vw,200px);line-height:0.9;font-weight:700;letter-spacing:-0.04em;text-align:center;white-space:nowrap;padding:0 0.06em;color:transparent;background:linear-gradient(180deg,rgba(255,255,255,0.14) 0%,rgba(255,255,255,0) 90%);-webkit-background-clip:text;background-clip:text;user-select:none;margin-bottom:-0.12em">ALGORICK</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  videoRef = React.createRef();
+  tiltRef = React.createRef();
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1200 };
+  onResize = () => { if (window.innerWidth !== this.state.w) this.setState({ w: window.innerWidth }); this.onScroll(); };
+  stackRef = React.createRef();
+  stackScroll() {
+    const root = this.stackRef.current; if (!root) return;
+    const vh = window.innerHeight;
+    const items = [...root.querySelectorAll('[data-stack]')];
+    const shown = this.state.shown || [];
+    let changed = false;
+    items.forEach((it, i) => {
+      const r = it.getBoundingClientRect();
+      if (!shown[i] && r.top < vh * 0.85) { shown[i] = true; changed = true; }
+      const next = items[i + 1];
+      let p = 0;
+      if (next) p = Math.min(1, Math.max(0, 1 - (next.getBoundingClientRect().top - r.top) / it.offsetHeight));
+      const card = it.querySelector('[data-card]');
+      if (card) { card.style.transform = `scale(${1 - 0.06 * p})`; card.style.filter = `brightness(${1 - 0.08 * p})`; }
+    });
+    if (changed) this.setState({ shown: [...shown] });
+  }
+  onScroll = () => {
+    this.stScroll();
+    this.stackScroll();
+    const el = this.tiltRef.current; if (!el) return;
+    const r = el.getBoundingClientRect(), vh = window.innerHeight;
+    const top = r.top + window.scrollY - 120;
+    const start = top - vh, end = top - vh * 0.25;
+    const p = Math.min(1, Math.max(0, (window.scrollY - start) / (end - start)));
+    const k = 1 - p;
+    el.style.transform = `perspective(1200px) translateY(${120 * k}px) scale(${0.8 + 0.2 * p}) rotateX(${60 * k}deg)`;
+  };
+  componentDidMount() {
+    const v = this.videoRef.current;
+    if (v) { v.muted = true; v.loop = true; v.playsInline = true; v.autoplay = true; v.play().catch(() => {}); }
+    this.stScroll();
+    this.stT = setInterval(() => { if (window.innerWidth >= 760) return; const p = (this.state.stP || 0) + 1; this.setState(p > 100 ? { stI: ((this.state.stI || 0) + 1) % 4, stP: 0 } : { stP: p }); }, 60);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize);
+    this.onScroll();
+    this.startViews();
+  }
+  viewsRef = React.createRef();
+  startViews() {
+    const el = this.viewsRef.current; if (!el) return;
+    this.io = new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) return;
+      this.io.disconnect();
+      this.setState({ vIn: true });
+      const t0 = performance.now() + 500;
+      const tick = now => { const p = Math.min(1, Math.max(0, (now - t0) / 1200)); this.setState({ pct: Math.round(62 * (1 - Math.pow(1 - p, 3))) }); if (p < 1) this.raf = requestAnimationFrame(tick); };
+      this.raf = requestAnimationFrame(tick);
+      this.rowT = setInterval(() => this.setState(s => ({ row: ((s.row ?? 0) + 1) % 4 })), 1800);
+    }, { threshold: 0.25 });
+    this.io.observe(el);
+    if (this.f3Ref.current) {
+      this.io3 = new IntersectionObserver(([e]) => {
+        if (e.isIntersecting) {
+          if (!this.state.f3In) this.setState({ f3In: true });
+          if (!this.f3T) this.f3T = setInterval(() => this.setState(s => ({ t: (s.t || 0) + 1 })), 150);
+        } else { clearInterval(this.f3T); this.f3T = null; }
+      }, { threshold: 0.1 });
+      this.io3.observe(this.f3Ref.current);
+    }
+  }
+  stRef = React.createRef();
+  stScroll() { const el = this.stRef.current; if (!el || window.innerWidth < 760) return; const r = el.getBoundingClientRect(); const span = el.offsetHeight - window.innerHeight; const t = Math.min(0.9999, Math.max(0, -r.top / (span || 1))) * 4; const i = Math.floor(t), p = Math.round((t - i) * 100); if (i !== this.state.stI || p !== this.state.stP) this.setState({ stI: i, stP: p }); }
+  stGo(k) { if (window.innerWidth < 760) return this.setState({ stI: k, stP: 0 }); const el = this.stRef.current; if (!el) return; const span = el.offsetHeight - window.innerHeight; window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY + span * (k + 0.02) / 4, behavior: 'smooth' }); }
+  componentWillUnmount() {
+    clearInterval(this.stT);
+    if (this.io) this.io.disconnect();
+    if (this.io3) this.io3.disconnect();
+    clearInterval(this.f3T);
+    cancelAnimationFrame(this.raf); clearInterval(this.rowT);
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
+  }
+  algos = [
+    ['Quantum Drift','Adaptive momentum strategy engineered for market regimes.','8.5%','₹1,50,000'],
+    ['Precision Strike','High-precision entry strategy leveraging intraday technical confluence.','6.2%','₹1,00,000'],
+    ['Phantom Pounce','Mean-reversion playbook focusing on swift market reversals.','9.1%','₹1,25,000'],
+    ['Alpha Spike','Alpha capture framework targeting sharp market spikes.','11.4%','₹2,00,000'],
+    ['Eclipse Breaker','Breakout strategy identifying structural market shifts.','7.8%','₹1,50,000'],
+    ['Stealth Mode','Stealth trend follower designed to minimise drawdowns.','4.9%','₹1,00,000'],
+    ['Turbo Surge','Acceleration-based system capturing powerful market moves.','12.3%','₹2,50,000'],
+    ['Nova Tracker','Swing tracker aligning with broader market rotations.','7.2%','₹1,50,000'],
+    ['Currency Scavenger','Cross-market arbitrage signals bridging crypto sentiment with market movements.','10.6%','₹2,00,000'],
+    ['Volatility Surge','Volatility breakout system tuned for derivatives markets.','13.0%','₹3,00,000'],
+    ['Titan Spike','Event-driven spike detector optimised for rapid market reactions.','9.7%','₹2,00,000'],
+    ['Spectra Vortex','Spectral analysis strategy targeting dynamic market rotations.','8.1%','₹1,50,000'],
+    ['Sniper X','Precision-focused trading algorithm designed to identify high-conviction market entries.','6.8%','₹1,00,000'],
+    ['Alpha Mind','Intelligent alpha-generation framework built to capture emerging market opportunities.','9.3%','₹2,00,000'],
+    ['Neural Trade','AI-driven trading system using adaptive signals to identify evolving market trends.','8.9%','₹2,00,000'],
+    ['Aether Pulse','Dynamic momentum algorithm designed to detect shifts in market strength and direction.','7.5%','₹1,50,000'],
+    ['Credit Capture','Specialised strategy focused on identifying premium-capture opportunities through disciplined market signals.','5.6%','₹3,00,000'],
+    ['Decay Hunter','Time-decay focused algorithm designed to detect opportunities created by changing volatility and option decay.','6.4%','₹2,50,000'],
+    ['Trade Titan','Robust multi-signal trading framework engineered to capture strong directional market movements.','10.2%','₹2,50,000'],
+    ['AI Gen','Next-generation AI trading framework designed to analyse market patterns and generate adaptive trade signals.','8.7%','₹1,50,000'],
+    ['Momentum Trader','Momentum-driven strategy designed to identify sustained price movements and participate in emerging trends.','9.9%','₹2,00,000'],
+  ].map(([name, desc, dd, cap]) => ({ name, desc, dd, cap, ini: name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase() }));
+  renderVals() {
+    const allAlgos = this.algos;
+    const tags = ['Momentum', 'Intraday', 'Mean reversion', 'Breakout'];
+    const si = this.state.stI || 0, sp = this.state.stP || 0, sa = this.algos[si];
+    const fd = Math.min(1, sp / 10);
+    const st = { ...sa, pos: si + 1, prog: sp + '%', tag: tags[si], fade: fd, fy: ((1 - fd) * 18).toFixed(1) + 'px', p0: si === 0, p1: si === 1, p2: si === 2, p3: si === 3, panel: ['Deploy log', 'Signal confluence', 'Recent signals', 'Risk monitor'][si], panelR: ['algorick v2.1', '5m · NIFTY 50', 'Live', 'Today'][si] };
+    const k2 = Math.min(1, Math.max(0, (sp - 8) / 50));
+    const stBars = [['VWAP reclaim', 92, '#FF5533'], ['RSI divergence', 78, '#ff8a6b'], ['Volume surge', 85, '#FF5533'], ['EMA alignment', 64, '#ffb3a0']].map(([label, v, c], j) => { const q = Math.min(1, Math.max(0, k2 * 1.6 - j * 0.15)); return { label, c, w: Math.round(v * q) + '%', v: Math.round(v * q) + '%' }; });
+    const stSig = [['BUY', 'HDFCBANK', 'Oversold bounce', '09:42'], ['SELL', 'TCS', 'Stretched above mean', '10:15'], ['BUY', 'INFY', 'Reversal at support', '11:03'], ['SELL', 'SBIN', 'Mean revert short', '13:27']].map(([side, sym, note, t], j) => { const on = sp >= 8 + j * 12, last = on && (j === 3 || sp < 8 + (j + 1) * 12); const buy = side === 'BUY'; return { side, sym, note, t, op: on ? 1 : 0, y: on ? '0' : '8px', bg: last ? 'rgba(255,85,51,0.08)' : 'rgba(255,255,255,0.02)', bd: last ? 'rgba(255,85,51,0.4)' : 'rgba(255,255,255,0.06)', cbg: buy ? 'rgba(61,220,132,0.15)' : 'rgba(255,85,51,0.15)', cfg: buy ? '#3ddc84' : '#ff7a5c' }; });
+    const rk = Math.round(46 * Math.min(1, Math.max(0, (sp - 6) / 50)));
+    const stRisk = { pct: rk + '%', dash: rk + ' 100', rows: [{ k: 'Daily loss used', v: '₹' + (rk * 100).toLocaleString('en-IN') + ' / ₹10,000', c: '#FF5533' }, { k: 'Open positions', v: (sp > 30 ? 2 : 1) + ' / 4', c: '#ffb3a0' }, { k: 'Kill switch', v: 'Armed', c: '#3ddc84' }] };
+    const slug = sa.name.toLowerCase().replace(/\s+/g, '-');
+    const W = '#ffffff', O = '#FF5533', D = 'rgba(255,255,255,0.6)', Y = '#ffc46b';
+    const L = [['$ algorick deploy ' + slug, W], ['✓ Broker connected · Zerodha', O], ['→ Capital allocated: ' + sa.cap, D], ['→ Max drawdown limit: ' + sa.dd, D], ['→ Stop-loss per trade: 1.5%', D], ['✓ Risk rules applied', O], ['● Strategy live · watching NSE', Y]];
+    const stLines = L.map(([t, c], k) => { const on = sp >= 3 + k * 11; return { t, c, op: on ? 1 : 0, x: on ? '0' : '-8px' }; });
+    const stDots = [0, 1, 2, 3].map(k => ({ label: 'Show algo ' + (k + 1), bg: k === si ? '#FF5533' : 'transparent', bd: k === si ? '#FF5533' : 'rgba(255,255,255,0.3)', go: () => this.stGo(k) }));
+    const rows = [0, 1, 2].map(i => {
+      const items = this.algos.slice(i * 7, i * 7 + 7);
+      const nar = (this.state.w || 1200) < 760;
+    const stLay = nar ? { h: 'auto', pos: 'static', minH: '0', pad: '88px 20px', wrap: 'wrap', lb: '100%', rb: '100%' } : { h: '400vh', pos: 'sticky', minH: '100vh', pad: '20px 24px', wrap: 'nowrap', lb: '0', rb: '0' };
+    return { st, stLines, stBars, stSig, stRisk, stDots, stLay, stRef: this.stRef, allAlgos,  items: [...items, ...items], anim: `${i % 2 ? 'mqR' : 'mqL'} ${60 + i * 8}s linear infinite` };
+    });
+    const pal = [['#0a0a0a','#fff'],['#FF5533','#fff'],['#ffd2c7','#0a0a0a'],['#e6e6e6','#0a0a0a'],['#3a3a3a','#fff']];
+    const ts = [
+      ['Before this I was glued to the screen from 9:15 to 3:30. Now Sniper X handles my entries and I review the order book at the end of the day. My exits are far more disciplined.','Rohan Mehta','Options trader, Mumbai'],
+      ['The max drawdown numbers on each algo made it easy to pick something that fits my risk.','Priya Nair','Part-time trader'],
+      ['Setup took ten minutes. Connecting my broker and choosing a strategy was straightforward.','Arjun Kapoor','Software engineer'],
+      ['Stealth Mode has kept my drawdowns small through choppy weeks. I finally trust a system enough to let it run without overriding it.','Sneha Iyer','Swing trader, Bengaluru'],
+      ['Clear order logs, clean dashboard, no guesswork about what was executed and why.','Vikram Shah','Full-time trader'],
+      ['I run AI Gen on Nifty and Decay Hunter on expiry days. Having both in one place, with live status for every order, saves me a lot of manual tracking.','Kavya Reddy','Derivatives trader'],
+      ['Support answered my capital question within the hour.','Aditya Rao','Retail investor'],
+      ['I liked that minimum capital is shown upfront. I started small and scaled once I saw consistent results.','Neha Joshi','First-time algo user'],
+      ['Rejected and cancelled orders are flagged immediately, so I never wonder what happened to a trade.','Karan Malhotra','Intraday trader'],
+    ].map(([quote, name, role], i) => ({ quote, name, role, ini: name.split(' ').map(w => w[0]).join(''), bg: pal[i % 5][0], fg: pal[i % 5][1] }));
+    const n = this.state.w < 640 ? 1 : this.state.w < 900 ? 2 : 3;
+    const cols = Array.from({ length: n }, (_, i) => i).map(i => {
+      const items = ts.filter((_, j) => j % n === i);
+      return { items: [...items, ...items], anim: `${i === 1 ? 'mqD' : 'mqU'} ${34 + i * 6}s linear infinite` };
+    });
+    const feats = [
+      ['link', 'One-click broker connect', 'Link your broker account in seconds and start trading right away.'],
+      ['receipt_long', 'Live order book', 'Track every order, fill and rejection as it happens.'],
+      ['shield', 'Built-in risk controls', 'Set stop-loss, daily loss limits and position caps per algo.'],
+      ['notifications_active', 'Instant trade alerts', 'Get notified the moment an algo enters or exits a trade.'],
+      ['tune', 'Trade sizing', 'Set lot size and quantity per algo to match your capital.'],
+      ['monitoring', 'Real-time P&L', 'See profit and loss update live across all your strategies.'],
+      ['lock', 'Bank-grade security', 'Encrypted connections and two-factor login keep your account safe.'],
+      ['support_agent', 'Priority support', 'Reach a real person during market hours when you need help.'],
+    ].map(([icon, label, desc], i) => {
+      const on = this.state.hov === i;
+      return { icon, label, desc, op: on ? 1 : 0, sc: on ? 1 : 0.92,
+        enter: () => this.setState({ hov: i }), leave: () => this.setState(s => s.hov === i ? { hov: null } : null) };
+    });
+    const brokers = [['Zerodha','zerodha'],['Upstox','upstox'],['Angel One','angelone'],['Dhan','dhan'],['Fyers','fyers'],['Groww','groww'],['Kotak Neo','kotakneo'],['5paisa','5paisa'],['Alice Blue','aliceblue'],['Shoonya','shoonya'],['Flattrade','flattrade'],['Rupeezy','rupeezy']]
+      .map(([name, f]) => ({ name, src: './brokers/' + f + '.png' }));
+    const brokerRows = [{ items: [...brokers, ...brokers], anim: 'mqL 60s linear infinite' }];
+    const vIn = !!this.state.vIn, row = this.state.row ?? 1;
+    const algoRows = [['Quantum Drift', 'Running', '#17803d'], ['Sniper X', 'Running', '#17803d'], ['Stealth Mode', 'Paused', '#9a6200'], ['Decay Hunter', 'Testing', '#c2381a']]
+      .map(([name, status, sc], k) => { const on = vIn && k === row; return { name, status, sc, bg: on ? '#fff3ef' : '#fff', cb: on ? '#FF5533' : '#fff', bd: on ? '#FF5533' : '#d6d6d6' }; });
+    const bh = [12, 14, 22, 62, 55, 78, 82, 45, 92], bc = ['#ffd2c7', '#ffd2c7', '#ffb3a0', '#FF5533', '#e8482a', '#FF5533', '#FF5533', '#ffc4b2', '#ff8a6b'];
+    const bars = bh.map((h, k) => ({ h: (vIn ? h : 0) + '%', c: bc[k], d: (0.6 + k * 0.07).toFixed(2) + 's' }));
+    const nar = (this.state.w || 1200) < 760;
+    const stLay = nar ? { h: 'auto', pos: 'static', minH: '0', pad: '88px 20px', wrap: 'wrap', lb: '100%', rb: '100%' } : { h: '400vh', pos: 'sticky', minH: '100vh', pad: '20px 24px', wrap: 'nowrap', lb: '0', rb: '0' };
+    return { st, stLines, stBars, stSig, stRisk, stDots, stLay, stRef: this.stRef, allAlgos, videoRef: this.videoRef, tiltRef: this.tiltRef, rows, cols, feats, brokerRows,
+      viewsRef: this.viewsRef, vOp: vIn ? 1 : 0, vY: vIn ? 0 : 80, hlW: vIn ? '100%' : '0%',
+      d1: vIn ? '62 100' : '0 100', d2: vIn ? '24 100' : '0 100', d3: vIn ? '14 100' : '0 100',
+      pct: this.state.pct ?? 0, algoRows, bars, stackRef: this.stackRef, stackCards: this.buildStack(), f3Ref: this.f3Ref, ...this.buildLive() };
+  }
+  f3Ref = React.createRef();
+  f3Move = e => {
+    const el = e.currentTarget, r = el.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+    el.style.transition = 'transform .12s linear, box-shadow .5s';
+    el.style.transform = `rotateX(${(0.5 - y) * 18}deg) rotateY(${(x - 0.5) * 22}deg) translateZ(10px)`;
+    el.style.boxShadow = `${(0.5 - x) * 30}px ${30 + (0.5 - y) * 20}px 60px -24px rgba(255,85,51,0.35)`;
+    el.style.setProperty('--mx', x * 100 + '%'); el.style.setProperty('--my', y * 100 + '%');
+    const s = el.querySelector('[data-shine]'); if (s) s.style.opacity = 1;
+  };
+  f3Leave = e => {
+    const el = e.currentTarget;
+    el.style.transition = 'transform .6s cubic-bezier(.2,.8,.2,1), box-shadow .6s';
+    el.style.transform = ''; el.style.boxShadow = '';
+    const s = el.querySelector('[data-shine]'); if (s) s.style.opacity = 0;
+  };
+  buildLive() {
+    const t = this.state.t || 0, on = !!this.state.f3In;
+    const inr = n => '₹' + Math.round(n).toLocaleString('en-IN');
+    const k0 = Math.floor(t / 5), vals = [];
+    for (let i = 0; i < 24; i++) { const k = k0 + i; vals.push(k * 0.9 + 9 * Math.sin(k * 0.7) + 5 * Math.sin(k * 1.9 + 1)); }
+    const mn = Math.min(...vals), mx = Math.max(...vals);
+    const pts = vals.map((v, i) => [(i * 240 / 23).toFixed(1), (84 - (v - mn) / (mx - mn || 1) * 70).toFixed(1)]);
+    const line = pts.map(p => p.join(',')).join(' ');
+    const pnl = 12480 + vals[23] * 60;
+    const live = { line, area: 'M0,90 L' + pts.map(p => p.join(',')).join(' L') + ' L240,90 Z', pnl: inr(pnl), pct: '+' + (pnl / 150000 * 100).toFixed(2) + '%', orders: String(27 + (k0 % 9)) };
+    const bx = (t * 1.4) % 110, x = Math.min(100, bx);
+    const bt = { x: x + '%', clip: (100 - x) + '%', year: String(2015 + Math.min(10, Math.floor(x / 10))), trades: Math.round(x * 48.12).toLocaleString('en-IN'), m1: x > 40 ? 1 : 0, m2: x > 72 ? 1 : 0 };
+    const rp = 30 + 22 * Math.sin(t / 9) * Math.sin(t / 23 + 1) + 10;
+    const risk = { pct: Math.round(rp) + '%', dash: (on ? rp : 0) + ' 100', deg: ((on ? rp : 0) / 100 * 180 - 90) + 'deg' };
+    const code = 'class DecisionEngine:\n    def __init__(self, model):\n        self.model = model\n        self.regime = "neutral"\n\n    def evaluate(self, candles):\n        signal = self.model.predict(candles)\n        if signal.confidence > 0.72:\n            self.regime = signal.trend\n            return "ENTER " + signal.side\n        return "WAIT"';
+    const ph = on ? (t * 5) % (code.length + 90) : 0, done = ph >= code.length;
+    const ml = { code: code.slice(0, Math.min(code.length, ph)), op: done ? 1 : 0, y: done ? '0' : '10px' };
+    const step = Math.floor(t / 9) % 4;
+    const dep = { w: on ? 'calc((100% - 56px) * ' + Math.min(step, 2) / 2 + ')' : '0%', status: step >= 2 ? 'Quantum Drift is live' : 'Deploying…', dot: step >= 2 ? '#3ddc84' : '#e0a000',
+      nodes: [['tune', 'Pick algo'], ['link', 'Connect broker'], ['rocket_launch', 'Go live']].map(([icon, label], i) => { const lit = on && step >= i; return { icon, label,
+        bg: lit ? 'linear-gradient(145deg,#FF7A5C,#FF5533 55%,#d93a1c)' : 'rgba(255,255,255,0.05)', bd: lit ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.1)', sh: lit ? '0 10px 24px -8px rgba(255,85,51,0.7)' : 'none', tc: lit ? '#fff' : 'rgba(255,255,255,0.5)' }; }) };
+    const sig = [['BUY', 'NIFTY 24500 CE', 'Filled @ ₹142.50'], ['SELL', 'BANKNIFTY FUT', 'Filled @ ₹51,820'], ['BUY', 'RELIANCE', 'Filled @ ₹2,948'], ['SELL', 'FINNIFTY 23800 PE', 'Filled @ ₹88.20'], ['BUY', 'HDFCBANK', 'Filled @ ₹1,672'], ['SELL', 'NIFTY FUT', 'Filled @ ₹24,512']];
+    const s0 = Math.floor(t / 14);
+    const tv = [0, 1, 2, 3].map(i => { const [side, sym, note] = sig[(s0 - i + 600) % sig.length], top = i === 0, buy = side === 'BUY';
+      return { side, sym, note, time: top ? 'now' : (i * 2) + 's ago', op: 1 - i * 0.18, bg: top ? 'rgba(255,85,51,0.1)' : 'rgba(255,255,255,0.04)', bd: top ? 'rgba(255,85,51,0.35)' : 'rgba(255,255,255,0.06)',
+        cbg: buy ? 'rgba(61,220,132,0.15)' : 'rgba(255,85,51,0.18)', cfg: buy ? '#3ddc84' : '#ff8a6b' }; });
+    return { f3op: on ? 1 : 0, f3enter: on ? 'none' : 'translateY(70px) rotateX(-35deg) scale(0.94)', f3Move: this.f3Move, f3Leave: this.f3Leave,
+      live, bt, btLine: this.btLine(), risk, ml, dep, tv };
+  }
+  btLine() {
+    if (this._bt) return this._bt;
+    const p = []; let v = 20;
+    for (let i = 0; i <= 60; i++) { v += 1.1 + 2.2 * Math.sin(i * 1.3) ; if (i === 22) v -= 14; if (i === 23) v -= 6; if (i === 41) v -= 10; p.push((i * 4) + ',' + (95 - v * 0.85).toFixed(1)); }
+    return (this._bt = p.join(' '));
+  }
+  buildStack() {
+    const shown = this.state.shown || [];
+    const G = '#17803d', R = '#c2381a', A = '#9a6200', K = '#0a0a0a';
+    return [
+      { badge: 'Stay in control', title: 'Risk Controls', text: 'Set stop-loss, daily loss limits and position caps for every strategy. Each algo follows your limits automatically, so one bad day never turns into a bad month.', panel: 'Risk Limits',
+        rows: [['Stop-loss per trade', '1.5%', 30, K, K], ['Daily loss used', '₹4,200 / ₹10,000', 42, K, '#FF5533'], ['Open positions', '3 / 4', 75, K, '#FF5533'], ['Capital deployed', '₹1,40,000', 70, K, '#ffb3a0']] },
+      { badge: 'Always in the loop', title: 'Live Order Book', text: 'Follow every order from signal to fill. Filled, pending, cancelled and rejected orders are tracked in real time with the exact price and time of execution.', panel: 'Today’s Orders',
+        rows: [['BUY NIFTY 24500 CE', 'Filled', 100, G, G], ['SELL BANKNIFTY FUT', 'Filled', 100, G, G], ['BUY RELIANCE EQ', 'Pending', 55, A, '#e0a000'], ['SELL FINNIFTY 23800 PE', 'Rejected', 100, R, '#FF5533']] },
+      { badge: 'Know what works', title: 'Performance Analytics', text: 'See win rate, returns, drawdown and risk-adjusted performance for each algo. Compare strategies side by side and put more capital behind the ones that deliver.', panel: 'Last 90 Days',
+        rows: [['Win rate', '64%', 64, K, '#FF5533'], ['Avg. return per trade', '1.8%', 45, G, '#ff8a6b'], ['Max drawdown', '8.5%', 28, R, '#6b1a0a'], ['Sharpe ratio', '1.9', 63, K, '#ffb3a0']] },
+    ].map((c, i) => {
+      const on = !!shown[i + 1];
+      return { ...c, top: (80 + (i + 1) * 14) + 'px', op: on ? 1 : 0, y: on ? 0 : 80, hl: on ? '100%' : '0%',
+        rows: c.rows.map(([label, value, w, col, bar], k) => ({ label, value, c: col, bar, w: (on ? w : 0) + '%', d: (0.5 + k * 0.12).toFixed(2) + 's' })) };
+    });
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://algorick.com/</loc><lastmod>2026-10-06</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://algorick.com/products</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://algorick.com/flash</loc><lastmod>2026-10-06</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://algorick.com/holiday-calendar</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://algorick.com/screener</loc><lastmod>2026-10-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://algorick.com/stock-heatmap</loc><lastmod>2026-10-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://algorick.com/technical-analysis</loc><lastmod>2026-10-06</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://algorick.com/fundamental-data</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://algorick.com/company-profile</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://algorick.com/blog</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://algorick.com/faq</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://algorick.com/contact</loc><lastmod>2026-10-06</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://algorick.com/terms</loc><lastmod>2026-10-06</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://algorick.com/privacy</loc><lastmod>2026-10-06</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://algorick.com/risk-disclosure</loc><lastmod>2026-10-06</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://algorick.com/refund-policy</loc><lastmod>2026-10-06</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url>
+    <loc>https://algorick.com/blog/what-is-algorithmic-trading</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://algorick.com/algos</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
